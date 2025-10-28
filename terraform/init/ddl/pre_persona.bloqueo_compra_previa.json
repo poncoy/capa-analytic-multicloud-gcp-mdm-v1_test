@@ -1,0 +1,52 @@
+[
+	{
+		"mode": "NULLABLE",
+		"name": "C000_id_bloqueo_compra_previa",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "C001_tip_documento",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "C001_num_documento",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "C001_cod_producto_origen",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "C001_des_agrupacion_n1",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "C001_des_agrupacion_n2",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "C001_des_agrupacion_n3",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "C001_num_placa",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "C001_des_subcanal",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "C001_periodo",
+		"type": "DATETIME"
+	}
+]

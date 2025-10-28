@@ -1,0 +1,119 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/rs-nprd-dlk-dt-rapi-cd22/instances/ue4-nonprod-rapi-gbt-uni/tables/uni__siniestro_detalle_salud"
+    ],
+    "bigtableOptions": {
+        "readRowkeyAsString": "true",
+        "columnFamilies": [
+            {
+                "familyId": "siniestro_detalle_salud",
+                "columns": [
+                    {
+                        "qualifierString": "tip_documento_afiliado",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_documento_afiliado",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "id_persona_afiliado",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_anhio_ocurrencia",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_siniestro",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "cod_proceso_bpm",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_diagnostico_origen",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "des_diagnostico_salud",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "des_procedimiento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "des_producto",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "ctd_siniestro",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "mnt_deducible_tec_sol",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "mnt_coaseguro_tec_sol",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "mnt_beneficio_tec_sol",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "fec_inicio_tratamiento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "fec_ult_liquidacion",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_colegio_medico",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "nom_medico",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "des_tipo_reclamo",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "des_tipo_contrato",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "des_cobertura",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "mnt_gasto_cubierto_tec_sol",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "razon_social_proveedor",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_poliza",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "periodo",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            }
+        ]
+    }
+}

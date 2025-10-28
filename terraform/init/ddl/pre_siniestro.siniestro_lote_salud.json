@@ -1,0 +1,50 @@
+[
+  {
+    "description": "Llave principal",
+    "mode": "NULLABLE",
+    "name": "C007_row_key",
+    "type": "STRING"
+  },
+  {
+    "description": "Fecha en que el proveedor envió la factura a RIMAC",
+    "mode": "NULLABLE",
+    "name": "C007_fec_envio_siniestro_lote",
+    "type": "DATETIME"
+  },
+  {
+    "description": "Numero de documento enviado por el proveedor",
+    "mode": "NULLABLE",
+    "name": "C007_num_documento_proveedor_lote",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo del estado que se encuentra el lote",
+    "mode": "NULLABLE",
+    "name": "C007_cod_estado_siniestro_lote",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripcion del estado del lote: RECIBIDO, APROBADO, RECHAZADO",
+    "mode": "NULLABLE",
+    "name": "C007_des_cod_estado_comprobante_pago_lote",
+    "type": "STRING"
+  },
+  {
+    "description": "Cantidad de documentos por lotes y por estados que ha enviado el proveedor a RIMAC",
+    "mode": "NULLABLE",
+    "name": "C007_cnt_documento_siniestro_lote",
+    "type": "INTEGER"
+  },
+  {
+    "description": "Periodo para identificar los siniestros en el portal salud",
+    "mode": "NULLABLE",
+    "name": "C007_periodo",
+    "type": "DATE"
+  },
+  {
+    "description": "Filtrar la sede del proveedor en el portal salud",
+    "mode": "NULLABLE",
+    "name": "C007_cod_sede_proveedor_siniestro",
+    "type": "STRING"
+  }
+]

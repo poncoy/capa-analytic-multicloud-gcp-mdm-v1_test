@@ -1,0 +1,80 @@
+[
+    {
+        "description": "Llave principal",
+        "mode": "NULLABLE",
+        "name": "C010_row_key",
+        "type": "STRING"
+      },
+      {
+        "description": "Codigo identificador del registro",
+        "mode": "NULLABLE",
+        "name": "C010_id_empresa",
+        "type": "STRING"
+    },
+    {
+        "description": "Tipo de documento de identidad",
+        "mode": "NULLABLE",
+        "name": "C010_tip_documento",
+        "type": "STRING"
+    },
+    {
+        "description": "Número de documento de identidad",
+        "mode": "NULLABLE",
+        "name": "C010_num_documento",
+        "type": "STRING"
+    },
+    {
+        "description": "codigo unico del cliente (cuc)",
+        "mode": "NULLABLE",
+        "name": "C010_cod_claveunicocliente",
+        "type": "STRING"
+    },
+    {
+        "description": "Razon social de la empresa",
+        "mode": "NULLABLE",
+        "name": "C010_des_razon_social",
+        "type": "STRING"
+    },
+    {
+        "description": "Nombre Comercial de la empresa",
+        "mode": "NULLABLE",
+        "name": "C010_nom_comercial",
+        "type": "STRING"
+    },
+    {
+        "description": "Fecha de constitucion de la empresa",
+        "mode": "NULLABLE",
+        "name": "C010_fec_constitucion",
+        "type": "DATE"
+    },
+    {
+        "description": "Nombre del departamento",
+        "mode": "NULLABLE",
+        "name": "C010_nom_departamento",
+        "type": "STRING"
+    },
+    {
+        "description": "Nombre de la provincia",
+        "mode": "NULLABLE",
+        "name": "C010_nom_provincia",
+        "type": "STRING"
+    },
+    {
+        "description": "Nombre del distrito",
+        "mode": "NULLABLE",
+        "name": "C010_nom_distrito",
+        "type": "STRING"
+    },
+    {
+        "description": "Nombre del segmento de la empresa",
+        "mode": "NULLABLE",
+        "name": "C010_nom_segmento_empresa",
+        "type": "STRING"
+    },
+    {
+        "description": "Periodo de carga",
+        "mode": "NULLABLE",
+        "name": "C010_periodo",
+        "type": "DATE"
+    }
+]

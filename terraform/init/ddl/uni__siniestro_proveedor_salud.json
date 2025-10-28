@@ -1,0 +1,71 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/rs-nprd-dlk-dt-rapi-cd22/instances/ue4-nonprod-rapi-gbt-uni/tables/uni__siniestro_proveedor_salud"
+    ],
+    "bigtableOptions": {
+        "readRowkeyAsString": "true",
+        "columnFamilies": [
+            {
+                "familyId": "C006_siniestros_ps",
+                "columns": [
+                    {
+                        "qualifierString": "C006_fec_notificacion",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C006_fec_devolucion",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C006_num_documento_proveedor",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C006_id_estado_siniestro_origen",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C006_des_estado_siniestro_origen",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C006_des_grupo_siniestro",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C006_ind_registrado_trama",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C006_mnt_documento_registrado_sol",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C006_des_origen_factura",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C006_cnt_siniestro",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C006_des_grupo_motivo_devolucion",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C006_periodo",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C006_cod_sede_proveedor_siniestro",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            }
+        ]
+    }
+}

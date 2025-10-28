@@ -1,0 +1,71 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/rs-nprd-dlk-dt-rapi-cd22/instances/ue4-nonprod-rapi-gbt-uni/tables/uni__preexistencia"
+    ],
+    "bigtableOptions": {
+        "readRowkeyAsString": "true",
+        "columnFamilies": [
+            {
+                "familyId": "preexistencia",
+                "columns": [
+                    {
+                        "qualifierString": "tip_documento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_documento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "id_persona",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "cod_preexistencia_origen",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "des_preexistencia",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "fec_inicio_vigencia_preexistencia",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_tramite_preexistencia_inclusion",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "nom_producto",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "est_preexistencia_origen",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_tramite_preexistencia_exclusion",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "fec_fin_vigencia_preexistencia",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "ind_fraude",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "periodo",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            }
+        ]
+    }
+}

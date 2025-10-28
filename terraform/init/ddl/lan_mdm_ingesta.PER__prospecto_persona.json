@@ -1,0 +1,789 @@
+[
+  {
+    "name": "id_prospecto_persona",
+    "type": "STRING"
+  },
+  {
+    "name": "cuc",
+    "type": "STRING"
+  },
+  {
+    "name": "tip_documento",
+    "type": "STRING"
+  },
+  {
+    "name": "num_documento",
+    "type": "STRING"
+  },
+  {
+    "name": "cod_acselx",
+    "type": "STRING"
+  },
+  {
+    "name": "ape_paterno",
+    "type": "STRING"
+  },
+  {
+    "name": "ape_materno",
+    "type": "STRING"
+  },
+  {
+    "name": "nombres",
+    "type": "STRING"
+  },
+  {
+    "name": "nombre_completo",
+    "type": "STRING"
+  },
+  {
+    "name": "fec_nacimiento",
+    "type": "DATE"
+  },
+  {
+    "name": "num_edad",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Indica si la persona es menor de edad",
+    "name": "ind_menor_edad",
+    "type": "STRING"
+  },
+  {
+    "name": "des_rango_edad",
+    "type": "STRING"
+  },
+  {
+    "name": "des_generacion",
+    "type": "STRING"
+  },
+  {
+    "name": "des_sexo",
+    "type": "STRING"
+  },
+  {
+    "name": "des_estado_civil",
+    "type": "STRING"
+  },
+  {
+    "name": "des_nacionalidad",
+    "type": "STRING"
+  },
+  {
+    "name": "des_pais_origen",
+    "type": "STRING"
+  },
+  {
+    "name": "des_grado_instruccion",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "name": "especialidad",
+        "type": "STRING"
+      },
+      {
+        "name": "fec_acreditacion",
+        "type": "STRING"
+      },
+      {
+        "description": "Descripci\u00f3n del grado acad\u00e9mico detalle",
+        "name": "des_grado_academico",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "nom_grado_academico",
+    "type": "RECORD"
+  },
+  {
+    "name": "ind_fallecido",
+    "type": "STRING"
+  },
+  {
+    "name": "nse_rimac",
+    "type": "STRING"
+  },
+  {
+    "name": "nse_agrup",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripcion del segmento growth",
+    "name": "des_segmentacion_growth",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripcion del sub segmento growth",
+    "name": "des_sub_segmentacion_growth",
+    "type": "STRING"
+  },
+  {
+    "name": "des_rango_linea_max_tcred",
+    "type": "STRING"
+  },
+  {
+    "name": "des_rango_deuda_total_tcred",
+    "type": "STRING"
+  },
+  {
+    "name": "cnt_entidad_sbs",
+    "type": "INTEGER"
+  },
+  {
+    "name": "des_rango_saldo_sbs",
+    "type": "STRING"
+  },
+  {
+    "name": "est_deudor_rcc",
+    "type": "STRING"
+  },
+  {
+    "name": "ind_critico",
+    "type": "STRING"
+  },
+  {
+    "name": "ind_yellowlist",
+    "type": "STRING"
+  },
+  {
+    "name": "ind_watchlist",
+    "type": "STRING"
+  },
+  {
+    "name": "ind_blacklist",
+    "type": "STRING"
+  },
+  {
+    "description": "Indicador para la persona que trabaja en empresa de riesgo comercial o persona descrita para recibir correo electonicos",
+    "name": "ind_trabajador_empresa_riesgo_desuscrito",
+    "type": "STRING"
+  },
+  {
+    "description": "Identifica si la persona trabaja en INDECOPI si su situaci\u00f3n es APORTANTE",
+    "name": "ind_empleado_empresa_riesgo_lpdp",
+    "type": "STRING"
+  },
+  {
+    "description": "Identifica si la persona trabaja en BANBIF si su situaci\u00f3n es APORTANTE",
+    "name": "ind_empleado_banbif",
+    "type": "STRING"
+  },
+  {
+    "description": "Identifica si la persona se ha desuscrito de los correos en los ultimos 6 meses hacia atras",
+    "name": "ind_desuscrito",
+    "type": "STRING"
+  },
+  {
+    "name": "ind_datoscontacto_sinvalidar",
+    "type": "STRING"
+  },
+  {
+    "name": "departamento_gestion_servicio",
+    "type": "STRING"
+  },
+  {
+    "description": "Se agrupando los departamentos en los siguientes: LIMA AREQUIPA ICA CUSCO LA LIBERTAD LAMBAYEQUE JUNIN ANCASH SIN UBIGEO. Esta variable ser\u00e1 utilizada por CRM para KPI Clientes",
+    "name": "agr_departamento_principal",
+    "type": "STRING"
+  },
+  {
+    "name": "provincia_gestion_servicio",
+    "type": "STRING"
+  },
+  {
+    "description": "Agrupado de los conos de los departamentos",
+    "name": "agr_cono",
+    "type": "STRING"
+  },
+  {
+    "name": "distrito_gestion_servicio",
+    "type": "STRING"
+  },
+  {
+    "name": "direccion_gestion_servicio",
+    "type": "STRING"
+  },
+  {
+    "name": "num_ubigeo_gestion_servicio",
+    "type": "STRING"
+  },
+  {
+    "name": "des_lima_prov",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica el Pais de ubigeo donde sufraga el usuario",
+    "name": "des_pais_votacion",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica el Departamento de ubigeo donde sufraga el usuario",
+    "name": "des_departamento_votacion",
+    "type": "STRING"
+  },
+  {
+    "description": "Se agrupando los departamentos de votacion en los siguientes: LIMA AREQUIPA ICA CUSCO LA LIBERTAD LAMBAYEQUE JUNIN ANCASG SIN UBIGEO OTROS. Esta variable ser\u00e1 utilizada por CRM para KPI Clientes",
+    "name": "agr_departamento_principal_votacion",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica la Provincia de ubigeo donde sufraga el usuario",
+    "name": "des_provincia_votacion",
+    "type": "STRING"
+  },
+  {
+    "description": "Agrupado de los conos de los departamentos de votacion",
+    "name": "agr_cono_votacion",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica el Distrito de ubigeo donde sufraga el usuario",
+    "name": "des_distrito_votacion",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica el numero de ubigeo donde sufraga el usuario",
+    "name": "num_ubigeo_votacion",
+    "type": "STRING"
+  },
+  {
+    "name": "ind_empleado_rimac",
+    "type": "STRING"
+  },
+  {
+    "name": "ind_empleado_bbva",
+    "type": "STRING"
+  },
+  {
+    "name": "ind_empleado_breca",
+    "type": "STRING"
+  },
+  {
+    "name": "ind_flag_bbva",
+    "type": "STRING"
+  },
+  {
+    "name": "ind_consentimiento_comercial",
+    "type": "STRING"
+  },
+  {
+    "name": "ind_ley_datos_personales",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica si el cliente es VIP o no",
+    "name": "ind_cliente_vip",
+    "type": "STRING"
+  },
+  {
+    "description": "Identificador de asesor VIP o prosperus",
+    "name": "id_persona_asesor",
+    "type": "STRING"
+  },
+  {
+    "description": "Nombre completo del asesor VIP o prosperus",
+    "name": "nom_completo_asesor",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica si el asesor es de la cartera VIP o prosperus",
+    "name": "tip_cartera",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_ind_dependiente_laboral",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_id_empresa_laboral",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_ruc_empresa_laboral",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_des_empresa_laboral",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica si la persona trabaja en una empresa de seguros externos",
+    "name": "ind_trabaja_empresa_seguros",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_des_score_ingresos",
+    "type": "STRING"
+  },
+  {
+    "description": "Indicador si la persona ha incrementado su rango salarial en el \u00faltimo periodo",
+    "name": "ind_incremento_salarial",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica el rango de ingreso al cual pertenece el prospecto",
+    "name": "des_rango_estimacion_ingreso_economico_pen",
+    "type": "STRING"
+  },
+  {
+    "name": "ind_tenencia_hijos",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_ind_es_bancarizado",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_des_calificacion_rcc",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_des_banco_principal",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_des_entidad_principal",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_des_entidad_max_linea_tc",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_ind_tiene_tarjeta_credito",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_ind_tiene_prestamo_personal",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_ind_tiene_prestamo_vehicular",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_ind_tiene_prestamo_hipotecario",
+    "type": "STRING"
+  },
+  {
+    "name": "ext_ind_rcc_negativo",
+    "type": "STRING"
+  },
+  {
+    "name": "ind_ex_cliente",
+    "type": "STRING"
+  },
+  {
+    "name": "fec_baja_cliente",
+    "type": "DATE"
+  },
+  {
+    "name": "ind_royal",
+    "type": "STRING"
+  },
+  {
+    "name": "des_profesion",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "name": "id_persona",
+        "type": "STRING"
+      },
+      {
+        "name": "ind_inv",
+        "type": "STRING"
+      },
+      {
+        "name": "ind_pep",
+        "type": "STRING"
+      },
+      {
+        "name": "ind_ref",
+        "type": "STRING"
+      },
+      {
+        "name": "ind_bloq",
+        "type": "STRING"
+      },
+      {
+        "name": "ind_ong",
+        "type": "STRING"
+      },
+      {
+        "name": "ind_ofac",
+        "type": "STRING"
+      },
+      {
+        "name": "ind_obligado_declarar",
+        "type": "STRING"
+      },
+      {
+        "description": "Campo calculado, descripcion del estado de investigado",
+        "name": "est_investigado",
+        "type": "STRING"
+      },
+      {
+        "description": "Marca de personas y naturales no domiciliadas (\"SI\"=No residente, \"NO\" = Con residencia)",
+        "name": "ind_no_domiciliado",
+        "type": "STRING"
+      },
+      {
+        "description": "Campo calculado, calificaci\u00f3n RCC del valor mas alto (\"S/C,\"NORMAL\",\"CON PROBLEMAS POTENCIALES\",\"DEFICIENTE\",\"DUDOSO\",\"PERDIDA\",\"NO DETERMINADO\")",
+        "name": "des_calificacion_rcc_general",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "name": "des_estado",
+            "type": "STRING"
+          },
+          {
+            "name": "fec_creacion",
+            "type": "DATE"
+          },
+          {
+            "name": "des_observacion",
+            "type": "STRING"
+          },
+          {
+            "name": "des_usuario",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "datos_investigado",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "name": "des_estado",
+            "type": "STRING"
+          },
+          {
+            "name": "fec_creacion",
+            "type": "DATE"
+          },
+          {
+            "name": "tip_entidad",
+            "type": "STRING"
+          },
+          {
+            "name": "des_entidad",
+            "type": "STRING"
+          },
+          {
+            "name": "des_cargo",
+            "type": "STRING"
+          },
+          {
+            "name": "des_relacion",
+            "type": "STRING"
+          },
+          {
+            "name": "des_resolucion",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "datos_pep",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "name": "des_estado",
+            "type": "STRING"
+          },
+          {
+            "name": "fec_creacion",
+            "type": "DATE"
+          },
+          {
+            "name": "des_observacion",
+            "type": "STRING"
+          },
+          {
+            "name": "tip_alerta",
+            "type": "STRING"
+          },
+          {
+            "name": "des_motivo_anul",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "datos_reforzado",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "name": "des_estado",
+            "type": "STRING"
+          },
+          {
+            "name": "des_observacion",
+            "type": "STRING"
+          },
+          {
+            "name": "cod_vinculo",
+            "type": "STRING"
+          },
+          {
+            "name": "des_vinculo",
+            "type": "STRING"
+          },
+          {
+            "name": "cod_bloqueo",
+            "type": "STRING"
+          },
+          {
+            "name": "des_bloqueo",
+            "type": "STRING"
+          },
+          {
+            "name": "fec_ini_bloqueo",
+            "type": "DATE"
+          },
+          {
+            "name": "fec_fin_bloqueo",
+            "type": "DATE"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "datos_bloqueo",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "name": "des_estado",
+            "type": "STRING"
+          },
+          {
+            "name": "fec_creacion",
+            "type": "DATE"
+          },
+          {
+            "name": "des_usuario",
+            "type": "STRING"
+          },
+          {
+            "name": "des_origen",
+            "type": "STRING"
+          },
+          {
+            "name": "cod_tipo_inst",
+            "type": "STRING"
+          },
+          {
+            "name": "tip_inst",
+            "type": "STRING"
+          },
+          {
+            "name": "cod_tipo_cont",
+            "type": "STRING"
+          },
+          {
+            "name": "tip_cont",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "datos_ong",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "name": "des_estado",
+            "type": "STRING"
+          },
+          {
+            "name": "fec_creacion",
+            "type": "DATE"
+          },
+          {
+            "name": "des_observacion",
+            "type": "STRING"
+          },
+          {
+            "name": "des_usuario",
+            "type": "STRING"
+          },
+          {
+            "name": "des_tipo",
+            "type": "STRING"
+          },
+          {
+            "name": "des_origen",
+            "type": "STRING"
+          },
+          {
+            "name": "des_nombre",
+            "type": "STRING"
+          },
+          {
+            "name": "cod_ofac",
+            "type": "STRING"
+          },
+          {
+            "name": "id_proceso",
+            "type": "STRING"
+          },
+          {
+            "name": "nom_cent_trabajo",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "datos_ofac",
+        "type": "RECORD"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "datos_laft",
+    "type": "RECORD"
+  },
+  {
+    "name": "ind_pais_sin_riesgo",
+    "type": "INTEGER"
+  },
+  {
+    "name": "ind_pais_riesgo_no_cooperante",
+    "type": "INTEGER"
+  },
+  {
+    "name": "ind_pais_riesgo_paraiso_fiscal",
+    "type": "INTEGER"
+  },
+  {
+    "fields": [
+      {
+        "name": "id_tercero_sistema",
+        "type": "STRING"
+      },
+      {
+        "name": "id_origen",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "identificador_sistema",
+    "type": "RECORD"
+  },
+  {
+    "description": "indica si el cliente es nuevo a nivel de compa\u00f1\u00eda",
+    "name": "ind_cliente_nuevo",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica el tipo de convenio que tiene el cliente. Puede ser 'Nuevo Convenio'-'CrossSell Convenio'-'No Aplica'",
+    "name": "tip_cliente_convenio",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "description": "fecha de registro del usuario en estar bien",
+        "name": "fec_registro_estar_bien",
+        "type": "DATE"
+      },
+      {
+        "description": "canal en que se registro el usuario en estar bien",
+        "name": "des_canal_digital_registro",
+        "type": "STRING"
+      },
+      {
+        "description": "indicador que indica que es un usuario estar bien",
+        "name": "ind_usuario_estar_bien",
+        "type": "STRING"
+      },
+      {
+        "description": "Indicador si el usuario realizo alguna  accion en el mes presente",
+        "name": "ind_usuario_activo_estar_bien",
+        "type": "STRING"
+      },
+      {
+        "description": "Fecha de ultima acci\u00f3n del usuario en estar bien",
+        "name": "fec_ultima_accion_estar_bien",
+        "type": "DATE"
+      },
+      {
+        "description": "Canal que se realizo la ultima accion en estar bien",
+        "name": "des_canal_digital_origen",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "arr_estar_bien",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "description": "Tipo de documento asociado a la persona",
+        "name": "tip_documento",
+        "type": "STRING"
+      },
+      {
+        "description": "N\u00famero de documento asociado a la persona",
+        "name": "num_documento",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "docs_identidad",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "description": "Tipo de contribuyente (persona natural con/sin negocio)",
+        "name": "tip_contribuyente",
+        "type": "STRING"
+      },
+      {
+        "description": "Condici\u00f3n del contribuyente (habido/no habido)",
+        "name": "tip_condicion_contribuyente",
+        "type": "STRING"
+      },
+      {
+        "description": "Estado del contribuyente (activo/baja)",
+        "name": "est_contribuyente",
+        "type": "STRING"
+      },
+      {
+        "description": "Fecha de inscripci\u00f3n del RUC",
+        "name": "fec_constitucion",
+        "type": "DATE"
+      },
+      {
+        "description": "Fecha de baja del RUC",
+        "name": "fec_baja",
+        "type": "DATE"
+      },
+      {
+        "description": "N\u00famero de trabajadores declarados por el RUC",
+        "name": "num_trabajadores",
+        "type": "INTEGER"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "datos_contribuyente",
+    "type": "RECORD"
+  },
+  {
+    "name": "periodo",
+    "type": "DATE"
+  },
+  {
+    "name": "fecha_procesamiento",
+    "type": "DATE"
+  }
+]

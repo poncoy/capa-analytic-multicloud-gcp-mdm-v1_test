@@ -1,0 +1,34 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/rs-nprd-dlk-dt-rapi-cd22/instances/ue4-nonprod-rapi-gbt-uni/tables/uni__resultado_tecnico_contratante"
+    ],
+    "bigtableOptions": {
+        "readRowkeyAsString": "true",
+        "columnFamilies": [
+            {
+                "familyId": "C008_resultado_tecnico_contratante",
+                "description": "Caso de uso para Resultado tecnico contratante, frecuencia diaria y consumida por API de Salesforce (usuario: Nelson Rojo)",
+                "columns": [
+                    { "description":"Identificador de la persona contratante poliza","qualifierString": "C008_id_persona","type": "STRING"},
+                    { "description":"descripcion del riesgo (SALUD, RIESGOS LABORALES, PATRIMONIALES, VIDA y NO DETERMINADO)","qualifierString": "C008_des_riesgo","type": "STRING"},
+                    { "description":"El valor del año para el periodo del resultado tecnico del cliente","qualifierString": "C008_val_anho","type": "STRING"},
+                    { "description":"suma de montos de Primas","qualifierString": "C008_mnt_prima_total_usd","type": "STRING"},
+                    { "description":"suma de montos de Primas y de Reaseguros","qualifierString": "C008_mnt_prima_retenida_usd","type": "STRING"},
+                    { "description":"suma de montos de Siniestros","qualifierString": "C008_mnt_siniestros_total_usd","type": "STRING"},
+                    { "description":"suma de montos de Siniestros y de Siniestros Cedidos","qualifierString": "C008_mnt_siniestros_retenidos_usd","type": "STRING"},
+                    { "description":"Resultado tecnico del cliente","qualifierString": "C008_mnt_resultado_tecnico_total_usd","type": "STRING"},
+                    { "description":"la ultima Fecha de procesamiento del resultado tecnico del cliente","qualifierString": "C008_fec_ultima_procesamiento","type": "STRING"},
+                    { "description":"porcentaje del resultado tecnico del cliente (mnt_resultado_tecnico_total_usd/ mnt_prima_total_usd)","qualifierString": "C008_por_resultado_tecnico","type": "STRING"},
+                    { "description":"porcentaje de siniestralidad (mnt_siniestros_total_usd/ mnt_prima_total_usd)","qualifierString": "C008_por_siniestralidad","type": "STRING"},
+                    { "description":"porcentaje de siniestralidad retenida (mnt_siniestros_retenidos_usd /mnt_prima_retenida_usd)","qualifierString": "C008_por_siniestralidad_retenida","type": "STRING"},
+                    { "description":"Fecha del procesamiento","qualifierString": "C008_fec_procesamiento","type": "STRING"},
+                    { "description":"periodo de la fecha del procesamiento","qualifierString": "C008_periodo","type": "STRING"}                    
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            }
+        ]
+    }
+}

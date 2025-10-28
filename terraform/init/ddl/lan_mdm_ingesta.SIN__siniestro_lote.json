@@ -1,0 +1,77 @@
+[
+  {
+    "description": "Es el concatenado del origen de la informacion,  codigo del comprobante, proveedor y numero de lote, separado por un \"-\" entre valores.",
+    "name": "id_siniestro_lote",
+    "type": "STRING"
+  },
+  {
+    "description": "Fecha de registro del lote enviado",
+    "name": "fec_envio_siniestro_lote",
+    "type": "DATE"
+  },
+  {
+    "description": "Hora de registro del lote enviado",
+    "name": "hor_envio_siniestro_lote",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo identificador del lote que contiene la informacion enviada",
+    "name": "cod_siniestro_lote",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo del emisor del documento ",
+    "name": "id_persona_proveedor",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo origen de la sede del proveedor",
+    "name": "cod_sede_proveedor",
+    "type": "STRING"
+  },
+  {
+    "description": "Tipo de documento emitido (Factura, Recibo por Honorario)",
+    "name": "tip_documento_proveedor_lote",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripci\u00f3n del tipo de documento emitido.",
+    "name": "num_documento_proveedor_lote",
+    "type": "STRING"
+  },
+  {
+    "description": "Razon social registrada por el proveedor, nombre de la empresa",
+    "name": "razon_social_proveedor_lote",
+    "type": "STRING"
+  },
+  {
+    "description": "Nombre comercial, con el cual es conocida la empresa",
+    "name": "nom_comercial_proveedor_lote",
+    "type": "STRING"
+  },
+  {
+    "description": "Estado del registro de la factura en el lote",
+    "name": "cod_estado_siniestro_lote",
+    "type": "STRING"
+  },
+  {
+    "description": "Id que contiene el codigo del comprobante de pago recibido",
+    "name": "id_comprobante_recibido",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica el origen de donde proviene la informaci\u00f3n",
+    "name": "id_origen",
+    "type": "STRING"
+  },
+  {
+    "description": "Monto total del comprobante recibido",
+    "name": "mnt_comprobante",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Periodo de proceso de la informaci\u00f3n",
+    "name": "periodo",
+    "type": "DATE"
+  }
+]

@@ -1,0 +1,47 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/rs-nprd-dlk-dt-rapi-cd22/instances/ue4-nonprod-rapi-gbt-uni/tables/uni__siniestro_lote_salud"
+    ],
+    "bigtableOptions": {
+        "readRowkeyAsString": "true",
+        "columnFamilies": [
+            {
+                "familyId": "C007_lote_factura_ps",
+                "columns": [
+                    {
+                        "qualifierString": "C007_fec_envio_siniestro_lote",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C007_num_documento_proveedor_lote",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C007_cod_estado_siniestro_lote",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C007_des_cod_estado_comprobante_pago_lote",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C007_cnt_documento_siniestro_lote",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C007_periodo",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C007_cod_sede_proveedor_siniestro",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            }
+        ]
+    }
+}

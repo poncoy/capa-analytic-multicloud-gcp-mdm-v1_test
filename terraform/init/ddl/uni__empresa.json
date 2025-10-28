@@ -1,0 +1,67 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/rs-nprd-dlk-dt-rapi-cd22/instances/ue4-nonprod-rapi-gbt-uni/tables/uni__empresa"
+    ],
+    "bigtableOptions": {
+        "readRowkeyAsString": "true",
+        "columnFamilies": [
+            {
+                "familyId": "C010_leads_eps",
+                "columns": [
+                    {
+                        "qualifierString": "C010_id_empresa",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C010_tip_documento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C010_num_documento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C010_cod_claveunicocliente",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C010_des_razon_social",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C010_nom_comercial",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C010_fec_constitucion",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C010_nom_departamento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C010_nom_provincia",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C010_nom_distrito",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C010_nom_segmento_empresa",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C010_periodo",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,136 @@
+[
+  {
+    "name": "id_persona",
+    "type": "STRING"
+  },
+  {
+    "name": "cod_acselx",
+    "type": "STRING"
+  },
+  {
+    "name": "cuc",
+    "type": "STRING"
+  },
+  {
+    "name": "tip_documento",
+    "type": "STRING"
+  },
+  {
+    "name": "num_documento",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "name": "riesgo",
+        "type": "STRING"
+      },
+      {
+        "name": "compania",
+        "type": "STRING"
+      },
+      {
+        "name": "cartera",
+        "type": "STRING"
+      },
+      {
+        "name": "tipo",
+        "type": "STRING"
+      },
+      {
+        "name": "nombre_comercial",
+        "type": "STRING"
+      },
+      {
+        "name": "nombre_tecnico",
+        "type": "STRING"
+      },
+      {
+        "name": "valor",
+        "type": "STRING"
+      },
+      {
+        "name": "fec_procesamiento",
+        "type": "DATE"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "probabilidad_nivel_1",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "placa",
+        "type": "STRING"
+      },
+      {
+        "name": "periodicidad",
+        "type": "STRING"
+      },
+      {
+        "name": "cartera",
+        "type": "STRING"
+      },
+      {
+        "name": "num_poliza",
+        "type": "STRING"
+      },
+      {
+        "name": "id_poliza",
+        "type": "STRING"
+      },
+      {
+        "name": "id_certificado",
+        "type": "STRING"
+      },
+      {
+        "name": "id_producto",
+        "type": "STRING"
+      },
+      {
+        "name": "id_contratante",
+        "type": "STRING"
+      },
+      {
+        "name": "id_lead",
+        "type": "STRING"
+      },
+      {
+        "name": "riesgo",
+        "type": "STRING"
+      },
+      {
+        "name": "tipo",
+        "type": "STRING"
+      },
+      {
+        "name": "nombre_comercial",
+        "type": "STRING"
+      },
+      {
+        "name": "nombre_tecnico",
+        "type": "STRING"
+      },
+      {
+        "name": "valor",
+        "type": "STRING"
+      },
+      {
+        "name": "fec_procesamiento",
+        "type": "DATE"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "probabilidad_nivel_2",
+    "type": "RECORD"
+  },
+  {
+    "name": "periodo",
+    "type": "DATE"
+  },
+  {
+    "name": "fec_procesamiento",
+    "type": "DATE"
+  }
+]

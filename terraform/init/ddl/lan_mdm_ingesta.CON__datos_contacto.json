@@ -1,0 +1,280 @@
+[
+	{
+		"mode": "NULLABLE",
+		"name": "id_persona",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "tip_documento",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "num_documento",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "cod_acselx",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "cuc",
+		"type": "STRING"
+	},
+	{
+		"fields": [
+			{
+				"mode": "NULLABLE",
+				"name": "des_tipo",
+				"type": "STRING"
+			},
+			{
+				"fields": [
+					{
+						"mode": "NULLABLE",
+						"name": "des_celular",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_casa",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_oficina",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "fec_carga",
+						"type": "DATE"
+					}
+				],
+				"mode": "NULLABLE",
+				"name": "datos_telefono",
+				"type": "RECORD"
+			},
+			{
+				"fields": [
+					{
+						"mode": "NULLABLE",
+						"name": "des_personal",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_laboral",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_principal",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "fec_carga",
+						"type": "DATE"
+					}
+				],
+				"mode": "NULLABLE",
+				"name": "datos_correo",
+				"type": "RECORD"
+			},
+			{
+				"fields": [
+					{
+						"mode": "NULLABLE",
+						"name": "des_direccion",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_pais",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_departamento",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_provincia",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_distrito",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "cod_tipo_via",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_tipo_via",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "nom_via",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "num_via",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "tip_interior",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "num_interior",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_manzana",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "num_lote",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_referencia",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_ref_adic",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "tip_sector",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "nom_sector",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "tip_zona",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_zona",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "num_ubigeo",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "nse_ubigeo",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_lima_agrup",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_lima_prov",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_dep_agrup",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_cono_agrup",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_cono_agrup_nuevo",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_nivel_riesgo_provincia",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "num_score_riesgo_provincia",
+						"type": "NUMERIC"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "des_nivel_riesgo_pais",
+						"type": "STRING"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "ind_pais_sin_riesgo",
+						"type": "INTEGER"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "ind_pais_riesgo_no_cooperante",
+						"type": "INTEGER"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "ind_pais_riesgo_paraiso_fiscal",
+						"type": "INTEGER"
+					},
+					{
+						"mode": "NULLABLE",
+						"name": "fec_carga",
+						"type": "DATE"
+					}
+				],
+				"mode": "NULLABLE",
+				"name": "datos_direccion",
+				"type": "RECORD"
+			}
+		],
+		"mode": "REPEATED",
+		"name": "detalle_datos_contacto",
+		"type": "RECORD"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "ind_fallecido",
+		"type": "STRING"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "periodo",
+		"type": "DATE"
+	},
+	{
+		"mode": "NULLABLE",
+		"name": "fec_procesamiento",
+		"type": "DATE"
+	}
+]

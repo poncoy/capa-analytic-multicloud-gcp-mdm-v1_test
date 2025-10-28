@@ -1,0 +1,1291 @@
+[
+  {
+    "description": "Es el concatenado del tipo de documento, el codigo de la entidad salud, el a\u00f1o del documento y el numero de documento, separado por un \"-\" entre valores.",
+    "name": "id_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Es una tipificacion de siniestro para indicar el tipo de solicitud que se est\u00e1 registrando en Rimac ",
+    "name": "tip_ingreso_siniestro",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Indica el tipo de reclamo asociado al siniestro: C, R",
+    "name": "tip_reclamo",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica la descripcion del tipo de reclamo: Credito, Reembolso",
+    "name": "des_tipo_reclamo",
+    "type": "STRING"
+  },
+  {
+    "description": "Numero que hace referencia al codigo de pago relacionado con tablas del AX",
+    "name": "num_obligacion",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica la procedencia donde ocurri\u00f3 el siniestro, Lima, provincia o el extranjero",
+    "name": "tip_procedencia",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica si el registro del siniestro se dio por trama tdef o registro manual de un usuario",
+    "name": "ind_tedef_salud",
+    "type": "STRING"
+  },
+  {
+    "description": "Fecha de la ocurrencia del siniestro",
+    "name": "fec_hora_ocurrencia",
+    "type": "TIMESTAMP"
+  },
+  {
+    "description": "Fecha en que se ha liquidado el siniestro",
+    "name": "fec_ult_liquidacion",
+    "type": "TIMESTAMP"
+  },
+  {
+    "description": "Fecha en que se notifica a Rimac del siniestro",
+    "name": "fec_notificacion",
+    "type": "TIMESTAMP"
+  },
+  {
+    "description": "Fecha en que se registro la informacion en Rimac Salud - Fecha de creacion",
+    "name": "fec_operacion",
+    "type": "TIMESTAMP"
+  },
+  {
+    "description": "Indica el monto total de los gastos incurridos por el proveedor/afiliado en el siniestro",
+    "name": "mnt_gasto_total_con_igv",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Numero de la nota de credito",
+    "name": "nro_nota_credito",
+    "type": "STRING"
+  },
+  {
+    "description": "Monto de la nota de credito",
+    "name": "mnt_nota_credito",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Indica el monto en soles que reporta Rimac al contratante, para que proceda con el descuento por planilla de su afiliado",
+    "name": "mnt_planilla_afiliado_usd",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Indica el monto en dolares de la planilla",
+    "name": "mnt_planilla_afiliado_sol",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Monto observado en el siniestro, puede ser por el gasto total o parcial.",
+    "name": "mnt_observado",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "C\u00f3digo del proveedor registrado por cada siniestro",
+    "name": "id_persona_proveedor_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Tipo de documento del proveedor",
+    "name": "tip_documento_proveedor_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Numero del documento del proveedor",
+    "name": "num_documento_proveedor_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Nombre completo del proveedor",
+    "name": "nom_completo_proveedor_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Nombre comercial que identifica al proveedor",
+    "name": "nom_comercial_proveedor_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Direccion principal registrada y que corresponde al proveedor",
+    "name": "dir_proveedor_siniestro",
+    "type": "STRING"
+  },
+{
+    "description": "Departamento de ubicacion del proveedor",
+    "name": "des_departamento_proveedor_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Provincia de ubicacion del proveedor",
+    "name": "des_provincia_proveedor_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Distrito de ubicacion del proveedor",
+    "name": "des_distrito_proveedor_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo de la sede del proveedor donde se atendi\u00f3 el siniestro",
+    "name": "cod_sede_proveedor_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Nombre de sede del proveedor",
+    "name": "nom_sede_proveedor_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Direccion de la sede del proveedor",
+    "name": "dir_sede_proveedor_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo del afiliado que ha hecho uso del seguro de salud.",
+    "name": "id_persona_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Tipo de documento del afiliado",
+    "name": "tip_documento_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Numero de documento de identidad del afiliado",
+    "name": "num_documento_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Nombre completo del afiliado",
+    "name": "nom_completo_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Fecha de nacimiento del afiliado",
+    "name": "fec_nacimiento_afiliado",
+    "type": "DATE"
+  },
+  {
+    "description": "Edad actual del afiliado",
+    "name": "edad_afiliado",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Edad del afiliado al momento del la ocurrencia del siniestro",
+    "name": "edad_afiliado_ocurrencia",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Sexo del afiliado",
+    "name": "des_sexo_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Indicador de discapacidad del afiliado",
+    "name": "ind_discapacidad",
+    "type": "STRING"
+  },
+  {
+    "description": "Departamento de la direccion del afiliado",
+    "name": "des_departamento_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Distrito de la direccion del afiliado",
+    "name": "des_provincia_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Provincia de la direccion del afiliado",
+    "name": "des_distrito_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo que hce referencia al parentesco en relacion al titular",
+    "name": "cod_parentesco",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripcion del parentesco: Padres, Hijo, Titular",
+    "name": "des_cod_parentesco",
+    "type": "STRING"
+  },
+  {
+    "description": "Fecha de afiliacion del asegurado a la poliza",
+    "name": "fec_afiliacion_asegurado",
+    "type": "DATE"
+  },
+  {
+    "description": "A\u00f1o y numero del documento de la poliza concatenado por guion(-) ",
+    "name": "id_siniestro_origen",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo de la poliza",
+    "name": "id_poliza",
+    "type": "STRING"
+  },
+  {
+    "description": "Numero de la poliza",
+    "name": "num_poliza",
+    "type": "STRING"
+  },
+  {
+    "description": "C\u00f3digo de las frecuencia de visitas anual que debe realizar Rimac al cliente por temas comerciales",
+    "name": "cod_frecuencia_visita_anual",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripci\u00f3n de las frecuencia de visitas anual que debe realizar Rimac al cliente por temas comerciales",
+    "name": "des_frecuencia_visita_anual",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo del contratante de la poliza",
+    "name": "id_contratante",
+    "type": "STRING"
+  },
+  {
+    "description": "Tipo de documento del contratante",
+    "name": "tip_documento_contratante",
+    "type": "STRING"
+  },
+  {
+    "description": "Numero de documento de identidad del contratante",
+    "name": "num_documento_contratante",
+    "type": "STRING"
+  },
+  {
+    "description": "Nombre completo del contratante",
+    "name": "nom_completo_contratante",
+    "type": "STRING"
+  },
+  {
+    "description": "direccion del contratante",
+    "name": "des_direccion_contratante",
+    "type": "STRING"
+  },
+  {
+    "name": "ciiu_v3_contratante",
+    "type": "STRING"
+  },
+  {
+    "name": "descripcion_ciiu_v3_contratante",
+    "type": "STRING"
+  },
+  {
+    "name": "des_sector_ciiu_v3_contratante",
+    "type": "STRING"
+  },
+  {
+    "name": "des_seccion_ciiu_v3_contratante",
+    "type": "STRING"
+  },
+  {
+    "name": "des_division_ciiu_v3_contratante",
+    "type": "STRING"
+  },
+  {
+    "name": "tip_tamanio_empresa_contratante",
+    "type": "STRING"
+  },
+  {
+    "description": "Agrupacion del contratante, para renovacion de polizas agrupada por el grupo economico, por ejemplo Breca se considera a Rimac y otras empresas del mismo grupo",
+    "name": "cod_grupo_renovacion_salud",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripcion de la agrupaci\u00f3n de contratante.",
+    "name": "des_grupo_renovacion_salud",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo del corredor de seguros",
+    "name": "id_persona_corredor",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Nombre completo del corredor de seguros",
+    "name": "nom_corredor",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo del producto utilizado en el siniestro",
+    "name": "id_producto",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo del producto segun el core origen",
+    "name": "cod_producto_origen",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripcion del producto",
+    "name": "des_producto",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripcion del agrupador de producto",
+    "name": "des_producto_agrupado",
+    "type": "STRING"
+  },
+  {
+    "name": "id_certificado",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo del titular de la poliza siniestrada",
+    "name": "id_titular",
+    "type": "STRING"
+  },
+  {
+    "description": "Tipo de documento de identidad del titular",
+    "name": "tip_documento_titular",
+    "type": "STRING"
+  },
+  {
+    "description": "Numero del documento del titular",
+    "name": "num_documento_titular",
+    "type": "STRING"
+  },
+  {
+    "description": "Nombre completo del titular",
+    "name": "nom_completo_titular",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo de siniestro, conformado por el a\u00f1o y numero del documento del siniestro",
+    "name": "num_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo del estado del siniestro",
+    "name": "id_estado_siniestro_origen",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripcion del siniestro segun su core origen",
+    "name": "des_estado_siniestro_origen",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripcion homologada del siniestro",
+    "name": "des_estado_siniestro",
+    "type": "STRING"
+  },
+  {
+    "name": "id_ubicacion_geografica",
+    "type": "STRING"
+  },
+  {
+    "name": "des_departamento_siniestro",
+    "type": "STRING"
+  },
+  {
+    "name": "des_provincia_siniestro",
+    "type": "STRING"
+  },
+  {
+    "name": "des_distrito_siniestro",
+    "type": "STRING"
+  },
+  {
+    "name": "des_ubicacion_detallada",
+    "type": "STRING"
+  },
+  {
+    "description": "Moneda en la que ha sido registrado el siniestro",
+    "name": "id_moneda",
+    "type": "STRING"
+  },
+  {
+    "description": "Nombre de la compa\u00f1ia asociada al siniestro: Rimac EPS, Rimac Salud",
+    "name": "nom_compania",
+    "type": "STRING"
+  },
+  {
+    "description": "Monto en soles que es enviado a Rimac por el proveedor, el cual es evaluado y ajustado de ser el caso  para solicicar el pagado",
+    "name": "mto_auditado_sol",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Monto en dolares que es enviado a Rimac por el proveedor, el cual es evaluado y ajustado de ser el caso  para solicicar el pagado",
+    "name": "mto_auditado_usd",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Monto en dolares que se debe abonar al proveedor o afiliado, el monto incluye impuestos",
+    "name": "mto_liquidado_usd",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Monto en soles que se debe abonar al proveedor o afiliado, el monto incluye impuestos",
+    "name": "mto_liquidado_sol",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Monto en dolares que se debe abonar al proveedor o afiliado, el monto incluye impuestos, el dato se muestra cuando efectivamente se realiz\u00f3 el pago en finanzas",
+    "name": "mto_pagado_usd",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Monto en dolares que se debe abonar al proveedor o afiliado, el monto incluye impuestos, el dato se muestra cuando efectivamente se realiz\u00f3 el pago en finanzas",
+    "name": "mto_pagado_sol",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Monto pagado por deducible en la moneda registrada del siniestro",
+    "name": "mto_pagado_deduci",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Monto en dolares pagado por deducible, el monto incluye impuesto",
+    "name": "mto_pagado_deduci_usd",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Monto en dolares pagado por deducible, el monto incluye impuesto",
+    "name": "mto_pagado_deduci_sol",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Descripcion del plan que tiene asignado el afiliado, por contratacion del producto de salud",
+    "name": "des_plan",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo del plan origen",
+    "name": "id_plan_origen",
+    "type": "STRING"
+  },
+  {
+    "description": "Porcentaje de siniestralidad por plan",
+    "name": "por_siniestralidad",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Version del plan que corresponde al momento de ocurrido el siniestro",
+    "name": "des_version_plan",
+    "type": "STRING"
+  },
+  {
+    "description": "Numero del plan origen del core RS",
+    "name": "id_version_plan_origen",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo del tipo de contrato entre Rimac y el proveedor",
+    "name": "cod_tipo_contrato",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Descripcion de los tipos de contrato: PACIENTE MES HTA, PACIENTE MES 2 DIAGNOSTICOS",
+    "name": "des_tipo_contrato",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo de los mecanismos de como Rimac va a pagar al proveedor",
+    "name": "cod_mecanismo_pago",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripcion de los mecanismos de pago: PACIENTE MES,PAGO POR SERVICIO, PAQUETE QUIRURGICO, CAPITACION",
+    "name": "des_mecanismo_pago",
+    "type": "STRING"
+  },
+  {
+    "description": "Codigo del tipo de agrupaci\u00f3n del afiliado",
+    "name": "cod_grupo_afiliacion",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripci\u00f3n del tipo de agrupaci\u00f3n del afiliado",
+    "name": "des_grupo_afiliacion",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica si el registro del documento que se asocia al siniestro, ha llegado al RS mediante trama o por excel",
+    "name": "ind_trama_tedef",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica el a\u00f1o de registro del accidente sctr",
+    "name": "anho_accidente_sctr",
+    "type": "INTEGER"
+  },
+  {
+    "description": "Indica el numero del accidente sctr asociado al siniestro",
+    "name": "num_accidente_sctr",
+    "type": "INTEGER"
+  },
+  {
+    "description": "Descripcion que hace referencia a la ocurrencia del accidente sctr",
+    "name": "des_comentario_accidente_sctr",
+    "type": "STRING"
+  },
+  {
+    "description": "Fecha de ocurrencia del accidente de tipo sctr ",
+    "name": "fec_accidente_sctr",
+    "type": "DATE"
+  },
+{
+    "description": "Codigo del usuario que ha realizado el ultimo movimiento en el siniestro",
+    "name": "cod_usuario_ult_movimiento_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Monto tentativo de pago al proveedor ( sin considerar el mecanismo de pago) el monto no incluye impuesto",
+    "name": "mnt_pagar_base",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Factor de impuesto, que podria o no aplicarse al monto final a pagar, valor referencial de impuesto",
+    "name": "mnt_factor_impuesto",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Indica si la factura se envio de manera digital o manual con los valores SI \u00f3 NO",
+    "name": "ind_factura_digital",
+    "type": "STRING"
+  },
+{
+    "description": "Codigo asignado en el proceso de recepcion de siniestros del BPM",
+    "name": "cod_proceso_bpm",
+    "type": "STRING"
+  },
+  {
+    "description": "numero que contiene el codigo del comprobante de pago recibido",
+    "name": "cod_comprobante_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica la fecha maxima de pago al proveedor por el servicio",
+    "name": "fec_limite_pago",
+    "type": "DATE"
+  },
+  {
+    "description": "Indica la fecha del ultimo movimiento registrado en el siniestro",
+    "name": "fec_ult_estado_movimiento",
+    "type": "DATE"
+  },
+  {
+    "fields": [
+      {
+        "name": "cod_accidente",
+        "type": "STRING"
+      },
+      {
+        "name": "des_accidente",
+        "type": "STRING"
+      },
+      {
+        "name": "cod_categoria_accidente",
+        "type": "STRING"
+      },
+      {
+        "name": "des_categoria_accidente",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "accidente_sctr",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "description": "Numero de correlativo de devolucion del siniestro",
+        "name": "num_correlativo_devolucion",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Indica el c\u00f3digo del grupo o el equipo responsable de la devoluci\u00f3n de un siniestro, contiene los valores:A,B y C  donde A = Administrativo, B y C = Medico",
+        "name": "cod_grupo_motivo_devolucion",
+        "type": "STRING"
+      },
+      {
+        "description": "Descripcion del codigo de grupo del motivo de devolucion",
+        "name": "des_cod_grupo_devolucion",
+        "type": "STRING"
+      },
+      {
+        "description": "Codigo del motivo por el cual fue devuelto un siniestro",
+        "name": "cod_motivo_devolucion",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Descripcion del motivo de devolucion",
+        "name": "des_cod_motivo_devolucion",
+        "type": "STRING"
+},
+      {
+        "description": "Fecha de creacion del siniestro devuelto",
+        "name": "fec_creacion_devolucion",
+        "type": "DATE"
+      },
+      {
+        "description": "Fecha del ultimo movimiento del siniestro devuelto",
+        "name": "fec_movimiento_devolucion",
+        "type": "DATE"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "grupo_devolucion",
+    "type": "RECORD"
+  },
+{
+    "fields": [
+      {
+        "description": "Codigo del diagnostico se\u00f1alado como principal",
+        "name": "id_diagnostico_salud",
+        "type": "STRING"
+      },
+      {
+        "description": "Codigo registrado en el core como diagnostico principal",
+        "name": "num_diagnostico_principal",
+        "type": "STRING"
+      },
+      {
+        "description": "Descripcion del diagnostico principal",
+        "name": "des_diagnostico_principal",
+        "type": "STRING"
+      },
+      {
+        "description": "Codigo registrado en el core como cobertura principal",
+        "name": "id_cobertura_principal",
+        "type": "STRING"
+      },
+      {
+        "description": "Descripcion de la cobertura",
+        "name": "des_cobertura_principal",
+        "type": "STRING"
+      },
+      {
+        "description": "Descripcion del agrupador de cobertura",
+        "name": "des_agrupacion_cobertura_principal",
+        "type": "STRING"
+      },
+      {
+        "description": "Indica si la cobertura pertenece a Hospitalario o no",
+        "name": "ind_hospitalario",
+        "type": "STRING"
+},
+      {
+        "description": "Indica si se trata de un diagnostico covid",
+        "name": "ind_covid",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "diagnostico_principal",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "description": "Codigo de la atencion",
+        "name": "id_pre_liquidacion_siniestro",
+        "type": "STRING"
+      },
+      {
+        "description": "Numero origen de la liquidacion",
+        "name": "num_pre_liquidacion_origen",
+        "type": "STRING"
+      },
+      {
+        "description": "Numero de pre liquidacion",
+        "name": "num_pre_liquidacion",
+        "type": "STRING"
+      },
+      {
+        "description": "Codigo del proveedor",
+        "name": "id_persona_proveedor",
+        "type": "STRING"
+      },
+      {
+        "description": "Tipo de documento del proveedor ej. RUC",
+        "name": "tip_documento_proveedor",
+        "type": "STRING"
+      },
+      {
+        "description": "Numero de documento del proveedor",
+        "name": "num_documento_proveedor",
+        "type": "STRING"
+      },
+      {
+        "description": "Razon social del proveedor",
+        "name": "razon_social_proveedor",
+        "type": "STRING"
+      },
+      {
+        "description": "Nombre comercial del proveedor",
+        "name": "nombre_comercial_proveedor",
+        "type": "STRING"
+      },
+      {
+        "description": "Tipo de proveedor al que se le realiza el pago Clinica",
+        "name": "des_tip_proveedor",
+        "type": "STRING"
+      },
+      {
+        "description": "Codigo de la sede del proveedor de servicios",
+        "name": "cod_sede_proveedor",
+        "type": "STRING"
+      },
+      {
+        "description": "Nombre de la sede del proveedor",
+        "name": "nom_sede_proveedor",
+        "type": "STRING"
+      },
+      {
+        "description": "Departamento de ubicacion del proveedor",
+        "name": "des_departamento_proveedor",
+        "type": "STRING"
+      },
+      {
+        "description": "Provincia de ubicacion del proveedor",
+        "name": "des_provincia_proveedor",
+        "type": "STRING"
+      },
+      {
+        "description": "Distrito de ubicacion del proveedor",
+        "name": "des_distrito_proveedor",
+        "type": "STRING"
+      },
+      {
+        "description": "Estado de la atencion",
+        "name": "des_est_pre_liquidacion",
+        "type": "STRING"
+      },
+      {
+        "description": "Moneda asociada a los montos del siniestro",
+        "name": "id_moneda",
+        "type": "STRING"
+      },
+      {
+        "description": "Correlativo de la atencion dentro del siniestro",
+        "name": "num_correlativo_atencion",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Diagnostico medico de la atencion del afiliado",
+        "name": "des_diagnostico_salud",
+        "type": "STRING"
+      },
+      {
+        "description": "Codigo origen de la atencion asociado a la informacion de Rimac Salud",
+        "name": "num_diagnostico_origen",
+        "type": "STRING"
+      },
+      {
+        "description": "C\u00f3digo del agrupador de negocio",
+        "name": "cod_grupo_diagnostico",
+        "type": "STRING"
+      },
+      {
+        "description": "Descripcion del grupo de diagnostico",
+        "name": "des_grupo_diagnostico",
+        "type": "STRING"
+      },
+      {
+        "description": "Codigo de agrupador, asociado al super grupo de beneficio",
+        "name": "cod_agrupacion_diagnostico",
+        "type": "STRING"
+      },
+      {
+        "description": "Descripcion de la agrupacion",
+        "name": "des_agrupacion_diagnostico",
+        "type": "STRING"
+      },
+      {
+        "description": "Indicador si la atencion esta asociada a un diagnostico covid",
+        "name": "ind_covid",
+        "type": "STRING"
+      },
+      {
+        "description": "Descripcion de la cobertura",
+        "name": "des_cobertura",
+        "type": "STRING"
+      },
+      {
+        "description": "Codigo de la cobertura segun el plan de salud adquirido",
+        "name": "id_cobertura_origen",
+        "type": "STRING"
+      },
+      {
+        "description": "Codigo de agrupacion de cobertura",
+        "name": "agrupacion_cobertura",
+        "type": "STRING"
+      },
+      {
+        "description": "Agrupacion de cobertura detallada en base al codigo de beneficio determinadas por el negocio del SMT Salud",
+        "name": "agrupacion_cobertura_negocio",
+        "type": "STRING"
+      },
+      {
+        "description": "Agrupacion de cobertura detallada en base al codigo de beneficio  determinadas por el negocio del SMT Salud",
+        "name": "agrupacion_cobertura_subnegocio",
+        "type": "STRING"
+      },
+      {
+        "description": "Fecha de inicio del tratamiento en la atencion",
+        "name": "fec_inicio_tratamiento",
+        "type": "DATE"
+      },
+      {
+        "description": "Fecha de fin del tratamiento en la atencion",
+        "name": "fec_fin_tratamiento",
+        "type": "DATE"
+      },
+      {
+        "description": "Fecha de inicio de internamiento, en caso la atencion lo requiera",
+        "name": "fec_inicio_internamiento",
+        "type": "DATE"
+      },
+      {
+        "description": "Fecha de fin de internamiento, en caso la atencion lo requiera",
+        "name": "fec_fin_internamiento",
+        "type": "DATE"
+      },
+      {
+        "description": "Tipo de Atencion: Ambulatoria, Hospitalaria, etc.",
+        "name": "des_tipo_atencion",
+        "type": "STRING"
+      },
+      {
+        "description": "Indica si la atenci\u00f3n tuvo una asignacion de validez forzada",
+        "name": "ind_forzado",
+        "type": "STRING"
+      },
+      {
+        "description": "Indica la cantidad de dias que tuvo por hospitalizacion",
+        "name": "nro_dias_estancia",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en dolares correspondiente al igv del gasto total",
+        "name": "mnt_igv_atencion_tec_usd",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en soles correspondiente al igv del gasto total",
+        "name": "mnt_igv_atencion_tec_sol",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en dolares de la renta de IV correspondiente al gasto total",
+        "name": "mnt_renta_iv_categoria_tec_usd",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en soles de la renta de IV correspondiente al gasto total",
+        "name": "mnt_renta_iv_categoria_tec_sol",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto fijo en dolares que es pagado por el afiliado, como parte de su plan de salud. El monto incluye el impuesto.",
+        "name": "mnt_deducible_tec_usd",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto fijo en soles que es pagado por el afiliado, como parte de su plan de salud. El monto incluye el impuesto.",
+        "name": "mnt_deducible_tec_sol",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto variable en dolares que es pagado por el afiliado, como parte de su plan de salud.El monto incluye el impuesto.",
+        "name": "mnt_coaseguro_tec_usd",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto variable en soles que es pagado por el afiliado, como parte de su plan de salud.El monto incluye el impuesto.",
+        "name": "mnt_coaseguro_tec_sol",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto total en dolares reportado por el provedor, de los gastos incurridos. El monto no incluye impuesto",
+        "name": "mnt_gasto_presentado_tec_usd",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto total en soles reportado por el provedor, de los gastos incurridos. El monto no incluye impuesto",
+        "name": "mnt_gasto_presentado_tec_sol",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en dolares correspondiente a los gastos rechazados por Rimac en la atencion.El monto incluye impuesto",
+        "name": "mnt_gasto_rechazado_tec_usd",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en soles correspondiente a los gastos rechazados por Rimac en la atencion.El monto incluye impuesto",
+        "name": "mnt_gasto_rechazado_tec_sol",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en dolares correspondiente a los gastos excluidos por Rimac en la atencion.El monto incluye impuesto",
+        "name": "mnt_gasto_excluido_tec_usd",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en soles correspondiente a los gastos excluidos por Rimac en la atencion.El monto incluye impuesto",
+        "name": "mnt_gasto_excluido_tec_sol",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en dolares que corresponde a los gastos que cubre Rimac, sin considerar montos que ha excluido o rechazado por no corresponder al plan de salud u otros motivos. El monto incluye impuesto",
+        "name": "mnt_gasto_cubierto_tec_usd",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en soles que corresponde a los gastos que cubre Rimac, sin considerar montos que ha excluido o rechazado por no corresponder al plan de salud u otros motivos. El monto incluye impuesto",
+        "name": "mnt_gasto_cubierto_tec_sol",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en dolares correspondiente al pago que ha realizado el afiliado en su atenci\u00f3n medica, el monto incluye impuesto.",
+        "name": "mnt_pago_directo_afiliado_tec_usd",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en soles correspondiente al pago que ha realizado el afiliado en su atenci\u00f3n medica, el monto incluye impuesto.",
+        "name": "mnt_pago_directo_afiliado_tec_sol",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en dolares que deberia pagar Rimac al proveedor, este monto puede variar al momento de aprobar el pago, por el tipo de convenio de pago con el proveedor y Rimac. El monto incluye impuesto",
+        "name": "mnt_beneficio_tec_usd",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en soles que deberia pagar Rimac al proveedor, este monto puede variar al momento de aprobar el pago, por el tipo de convenio de pago con el proveedor y Rimac. El monto incluye impuesto",
+        "name": "mnt_beneficio_tec_sol",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en dolares,  corresponde al pago que se env\u00eda al core AX, para hacer efectivo el desembolso. El monto no incluye impuesto",
+        "name": "mnt_beneficio_sin_impuesto_aprobado_usd",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto en soles,  corresponde al pago que se env\u00eda al core AX, para hacer efectivo el desembolso. El monto no incluye impuesto",
+        "name": "mnt_beneficio_sin_impuesto_aprobado_sol",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto correspondiente a la parte del impuesto, en dolares, que se env\u00eda a pago, hacia el core AX, para hacer efectivo el desembolso del dinero.",
+        "name": "mnt_impuesto_aprobado_usd",
+        "type": "NUMERIC"
+      },
+      {
+        "description": "Monto correspondiente a la parte del impuesto, en soles, que se env\u00eda a pago, hacia el core AX, para hacer efectivo el desembolso del dinero.",
+        "name": "mnt_impuesto_aprobado_sol",
+        "type": "NUMERIC"
+      },
+      {
+        "fields": [
+          {
+            "description": "Identifica el procedimiento realizado dentro de la atencion del siniestro",
+            "name": "id_procedimiento_atencion_salud",
+            "type": "STRING"
+          },
+          {
+            "description": "Inica el codigo de atencion+procedimiento desde el core",
+            "name": "num_procedimiento_atencion_origen",
+            "type": "STRING"
+          },
+          {
+            "description": "Indica el numero de orden en el procedimiento realizado",
+            "name": "num_procedimiento_origen",
+            "type": "STRING"
+          },
+          {
+            "description": "Descripcion del procedimiento realizado: radiografias,vacunas, chequeo general, otros",
+            "name": "des_procedimiento",
+            "type": "STRING"
+          },
+          {
+            "description": "Codigo que hace referencia al tipo de procedimiento realizado",
+            "name": "tip_procedimiento",
+            "type": "STRING"
+          },
+          {
+            "description": "Descripcion del tipo de procedimiento: Laboratorio, Imagenes, Honor.Medicos, otros",
+            "name": "des_tipo_procedimiento",
+            "type": "STRING"
+          },
+          {
+            "description": "Contiene el codigo CMP, cuando se realizan consultas medicas",
+            "name": "num_colegio_medico",
+            "type": "STRING"
+          },
+          {
+            "description": "Nombre completo del medico tratante",
+            "name": "nom_medico",
+            "type": "STRING"
+          },
+          {
+            "description": "Codigo de del rechazo del procedimiento realizado en las validaciones de rimac",
+            "name": "cod_motivo_rechazo_procedimiento",
+            "type": "STRING"
+          },
+          {
+            "description": "Descripcion del motivo de rechazo: sin cobertura, exceso en cantidad de atenciones, entre otros",
+            "name": "des_motivo_rechazo_procedimiento",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "description": "Descripcion de las especialidades que tiene el medico tratante",
+                "name": "des_especialidad",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "especialidades",
+            "type": "RECORD"
+          },
+          {
+            "description": "Monto en dolares correspondiente al igv del gasto total del procedimiento",
+            "name": "mnt_igv_procedimiento_tec_usd",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto en soles correspondiente al igv del gasto total del procedimiento",
+            "name": "mnt_igv_procedimiento_tec_sol",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto en dolares de la renta de IV correspondiente al gasto total del procedimiento",
+            "name": "mnt_renta_iv_categoria_tec_usd",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto en soles de la renta de IV correspondiente al gasto total del procedimiento",
+            "name": "mnt_renta_iv_categoria_tec_sol",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto fijo en dolares que es pagado por el afiliado, como parte de su plan de salud, detallado por procedimiento. El monto incluye el impuesto.",
+            "name": "mnt_deducible_tec_usd",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto fijo en soles que es pagado por el afiliado, como parte de su plan de salud, detallado por procedimiento. El monto incluye el impuesto.",
+            "name": "mnt_deducible_tec_sol",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto variable en dolares que es pagado por el afiliado, como parte de su plan de salud, el monto esta detallado por procedimiento e incluye el impuesto.",
+            "name": "mnt_coaseguro_tec_usd",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto variable en soles que es pagado por el afiliado, como parte de su plan de salud, el monto esta detallado por procedimiento e incluye el impuesto.",
+            "name": "mnt_coaseguro_tec_sol",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto total en dolares reportado por el provedor, de los gastos incurridos por procedimiento. El monto no incluye impuesto",
+            "name": "mnt_gasto_presentado_tec_usd",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto total en soles reportado por el provedor, de los gastos incurridos por procedimiento. El monto no incluye impuesto",
+            "name": "mnt_gasto_presentado_tec_sol",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto en dolares correspondiente a los gastos rechazados por Rimac en el procedimiento.El monto incluye impuesto",
+            "name": "mnt_gasto_rechazado_tec_usd",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto en soles correspondiente a los gastos rechazados por Rimac en el procedimiento.El monto incluye impuesto",
+            "name": "mnt_gasto_rechazado_tec_sol",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto en dolares correspondiente a los gastos excluidos por Rimac en el procedimiento.El monto incluye impuesto",
+            "name": "mnt_gasto_excluido_tec_usd",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto en soles correspondiente a los gastos excluidos por Rimac en el procedimiento.El monto incluye impuesto",
+            "name": "mnt_gasto_excluido_tec_sol",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto en dolares que deberia pagar Rimac al proveedor, este monto puede variar al momento de aprobar el pago, por el tipo de convenio de pago con el proveedor y Rimac, el monto esta detallado por procedimiento e incluye impuesto.",
+            "name": "mnt_beneficio_tec_usd",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto en soles que deberia pagar Rimac al proveedor, este monto puede variar al momento de aprobar el pago, por el tipo de convenio de pago con el proveedor y Rimac, el monto esta detallado por procedimiento e incluye impuesto.",
+            "name": "mnt_beneficio_tec_sol",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto en dolares distribuido a nivel de procedimiento,  corresponde al pago que se env\u00eda al core AX, para hacer efectivo el desembolso. El monto no incluye impuesto.",
+            "name": "mnt_beneficio_sin_impuesto_aprobado_usd",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto en soles distribuido a nivel de procedimiento,  corresponde al pago que se env\u00eda al core AX, para hacer efectivo el desembolso. El monto no incluye impuesto.",
+            "name": "mnt_beneficio_sin_impuesto_aprobado_sol",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto correspondiente a la parte del impuesto, en dolares distribuido a nivel de procedimiento, que se env\u00eda a pago, hacia el core AX, para hacer efectivo el desembolso del dinero.",
+            "name": "mnt_impuesto_aprobado_usd",
+            "type": "NUMERIC"
+          },
+          {
+            "description": "Monto correspondiente a la parte del impuesto, en soles distribuido a nivel de procedimiento, que se env\u00eda a pago, hacia el core AX, para hacer efectivo el desembolso del dinero.",
+            "name": "mnt_impuesto_aprobado_sol",
+            "type": "NUMERIC"
+          },
+          {
+            "fields": [
+              {
+                "description": "Codigo del medicamento que lo identifica dentro del siniestro, la atencion y el procedimiento",
+                "name": "num_detalle",
+                "type": "STRING"
+              },
+              {
+                "description": "Tipo de detalle del medicamento: Cat\u00e1logo GTIN (EAN), UNSPSC, CUM-SUNASA",
+                "name": "tip_detalle",
+                "type": "STRING"
+              },
+              {
+                "description": "Codigo del medicamento asignado dentro del modelo de gcp",
+                "name": "id_medicamento",
+                "type": "STRING"
+              },
+              {
+                "description": "Descripcion del medicamento: Cetirizina, Panadol, etc",
+                "name": "des_medicamento",
+                "type": "STRING"
+              },
+              {
+                "description": "",
+                "name": "des_catalogo",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "description": "Descripcion del principio activo o base del medicamento",
+                    "name": "des_principio_activo",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "descripcion_principio_activo",
+                "type": "RECORD"
+              },
+              {
+                "description": "Descripcion de la composicion del medicamento",
+                "name": "des_composicion",
+                "type": "STRING"
+              },
+              {
+                "description": "",
+                "name": "ind_pertenece_petitorio",
+                "type": "STRING"
+              },
+              {
+                "description": "Indica si el medicamento es exclusivo para hombres o mujeres",
+                "name": "tip_sexo_exclusivo",
+                "type": "STRING"
+              },
+              {
+                "description": "Codigo de equivalencia universal",
+                "name": "equivalencia_kairos",
+                "type": "STRING"
+              },
+              {
+                "description": "Descripcion de la unidad medica: mg/ml,mcg ",
+                "name": "des_unidad_medida",
+                "type": "STRING"
+              },
+              {
+                "description": "Descripcion de la forma del medicamento: crema, gel, tableta otros",
+                "name": "des_forma_farmaceutica",
+                "type": "STRING"
+              },
+              {
+                "description": "Descripcion de la presentacion del medicamento: FCO. X 105 ML, AMPOLLA, DISP. TBO. X 10 G, otros",
+                "name": "des_presentacion",
+                "type": "STRING"
+              },
+              {
+                "description": "Descripcion del fabricante del medicamento",
+                "name": "des_fabricante",
+                "type": "STRING"
+              },
+              {
+                "description": "Nombre del propietario que ha registrado el medicamento",
+                "name": "des_propietario_registro",
+                "type": "STRING"
+              },
+              {
+                "description": "",
+                "name": "des_clasificacion_atc",
+                "type": "STRING"
+              },
+              {
+                "description": "Descripcion del estado del medicamento homologado",
+                "name": "des_est_medicamento",
+                "type": "STRING"
+              },
+              {
+                "description": "Descripcion del estado origen",
+                "name": "des_est_medicamento_origen",
+                "type": "STRING"
+              },
+              {
+                "description": "Cantidad de la presentacion del medicamento",
+                "name": "cnt_detalle",
+                "type": "INTEGER"
+              },
+              {
+                "description": "Precio unitario del medicamento",
+                "name": "mnt_precio",
+                "type": "NUMERIC"
+              },
+              {
+                "description": "Valor de venta del medicamento",
+                "name": "mnt_detalle",
+                "type": "NUMERIC"
+              },
+              {
+                "description": "Impuesto correspondiente al valor de venta del medicamento",
+                "name": "mnt_igv_detalle",
+                "type": "NUMERIC"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "detalle_farmacia_insumo",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "procedimiento_salud",
+        "type": "RECORD"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "atencion_salud",
+    "type": "RECORD"
+  },
+  {
+    "name": "periodo",
+    "type": "DATE"
+  }
+]

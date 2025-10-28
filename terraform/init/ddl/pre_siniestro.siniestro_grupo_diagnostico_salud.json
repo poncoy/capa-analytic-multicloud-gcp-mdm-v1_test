@@ -1,0 +1,68 @@
+[
+  {
+    "description": "Llave principal, combinación única de varios identificadores relacionados a un siniestro.",
+    "mode": "NULLABLE",
+    "name": "row_key",
+    "type": "STRING"
+  },
+  {
+    "description": "Tipo de documento del afiliado (por ejemplo, DNI, pasaporte, etc.).",
+    "mode": "NULLABLE",
+    "name": "tip_documento_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Número de documento del afiliado (cliente asegurado) en el sistema.",
+    "mode": "NULLABLE",
+    "name": "num_documento_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Código del asegurado asociado al siniestro.",
+    "mode": "NULLABLE",
+    "name": "id_persona_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Código del grupo diagnóstico al que pertenece el siniestro.",
+    "mode": "NULLABLE",
+    "name": "cod_diagnostico_origen",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripción del grupo diagnóstico asociado al siniestro.",
+    "mode": "NULLABLE",
+    "name": "des_grupo_diagnostico",
+    "type": "STRING"
+  },
+  {
+    "description": "Monto aprobado del beneficio cubierto, en soles.",
+    "mode": "NULLABLE",
+    "name": "mnt_gasto_cubierto_sol",
+    "type": "FLOAT"
+  },
+  {
+    "description": "Número de casos o incidencias relacionadas al diagnóstico por siniestro.",
+    "mode": "NULLABLE",
+    "name": "ctd_siniestro",
+    "type": "INTEGER"
+  },
+  {
+    "description": "Tipo de procedencia del siniestro.",
+    "mode": "NULLABLE",
+    "name": "tip_procedencia",
+    "type": "STRING"
+  },
+  {
+    "description": "Nombre completo del afiliado o asegurado.",
+    "mode": "NULLABLE",
+    "name": "nom_completo_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Periodo de tiempo relevante para el siniestro.",
+    "mode": "NULLABLE",
+    "name": "periodo",
+    "type": "DATE"
+  }
+]

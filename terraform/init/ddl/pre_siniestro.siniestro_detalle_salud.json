@@ -1,0 +1,158 @@
+[
+  {
+    "description": "Llave principal, combinación única de varios identificadores relacionados a un siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "row_key",
+    "type": "STRING"
+  },
+  {
+    "description": "Tipo de documento del afiliado (por ejemplo, DNI, pasaporte, etc.).",
+    "mode": "NULLABLE",
+    "name": "tip_documento_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Número de documento del afiliado (cliente asegurado) en el sistema.",
+    "mode": "NULLABLE",
+    "name": "num_documento_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Código del asegurado asociado al siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "id_persona_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Año en que ocurrió el siniestro.",
+    "mode": "NULLABLE",
+    "name": "num_anhio_ocurrencia",
+    "type": "INTEGER"
+  },
+  {
+    "description": "Número del siniestro asociado al caso.",
+    "mode": "NULLABLE",
+    "name": "num_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Código BPM asociado al siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "cod_proceso_bpm",
+    "type": "STRING"
+  },
+  {
+    "description": "Código del grupo diagnóstico al que pertenece el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "num_diagnostico_origen",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripción del diagnóstico relacionado con el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "des_diagnostico_salud",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripción del procedimiento realizado relacionado con el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "des_procedimiento",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripción del producto o servicio relacionado con el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "des_producto",
+    "type": "STRING"
+  },
+  {
+    "description": "Cantidad de siniestros asociados a este caso.",
+    "mode": "NULLABLE",
+    "name": "ctd_siniestro",
+    "type": "INTEGER"
+  },
+  {
+    "description": "Monto presentado del deducible para el gasto relacionado con el siniestro, en soles.",
+    "mode": "NULLABLE",
+    "name": "mnt_deducible_tec_sol",
+    "type": "FLOAT"
+  },
+  {
+    "description": "Monto presentado del coaseguro para el gasto relacionado con el siniestro, en soles.",
+    "mode": "NULLABLE",
+    "name": "mnt_coaseguro_tec_sol",
+    "type": "FLOAT"
+  },
+  {
+    "description": "Monto presentado del beneficio para el gasto relacionado con el siniestro, en soles.",
+    "mode": "NULLABLE",
+    "name": "mnt_beneficio_tec_sol",
+    "type": "FLOAT"
+  },
+  {
+    "description": "Fecha en la que ocurrió el siniestro o el evento relacionado.",
+    "mode": "NULLABLE",
+    "name": "fec_inicio_tratamiento",
+    "type": "DATE"
+  },
+  {
+    "description": "Fecha de liquidación del monto solicitado.",
+    "mode": "NULLABLE",
+    "name": "fec_ult_liquidacion",
+    "type": "DATE"
+  },
+  {
+    "description": "Número de colegio médico del profesional involucrado en el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "num_colegio_medico",
+    "type": "STRING"
+  },
+  {
+    "description": "Nombre del médico relacionado con el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "nom_medico",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripción del tipo de reclamo asociado al siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "des_tipo_reclamo",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripción del tipo de contrato asociado al siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "des_tipo_contrato",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripción de la cobertura asociada al siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "des_cobertura",
+    "type": "STRING"
+  },
+  {
+    "description": "Monto total del gasto relacionado con el siniestro, en soles.",
+    "mode": "NULLABLE",
+    "name": "mnt_gasto_cubierto_tec_sol",
+    "type": "FLOAT"
+  },
+  {
+    "description": "Razón social del proveedor asociado al siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "razon_social_proveedor",
+    "type": "STRING"
+  },
+  {
+    "description": "Número de póliza asociado al siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "num_poliza",
+    "type": "STRING"
+  },
+  {
+    "description": "Periodo de tiempo relevante para el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "periodo",
+    "type": "DATE"
+  }
+]

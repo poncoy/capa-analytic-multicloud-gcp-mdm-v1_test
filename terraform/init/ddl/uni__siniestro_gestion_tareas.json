@@ -1,0 +1,107 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/rs-nprd-dlk-dt-rapi-cd22/instances/ue4-nonprod-rapi-gbt-uni/tables/uni__siniestro_gestion_tareas"
+    ],
+    "bigtableOptions": {
+        "readRowkeyAsString": "true",
+        "columnFamilies": [
+            {
+                "familyId": "C009_gestion_tareas",
+                "columns": [
+                    {
+                        "qualifierString": "C009_fec_inicio_actividad",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_fec_fin_actividad",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_des_actividad_siniestro",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_des_tipo_proceso_auditoria",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_val_proceso_auditoria_admin",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_cod_proveedor",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_cod_sede_proveedor",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_des_correo_corporativo",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_periodo",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_des_detalle_tarea",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_mnt_detalle_tarea",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_cnt_detalle_tarea",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_des_asignacion_tarea",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_cnt_asignacion_tarea",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_des_vencimiento_tarea",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_cnt_vencimiento_tarea",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_nom_completo_proveedor_siniestro",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_cnt_tareas_proveedor",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_des_tipo_liquidacion",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_cnt_liquidacion",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_des_tipo_devolucion",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C009_cnt_devolucion",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            }            
+        ]
+    }
+}

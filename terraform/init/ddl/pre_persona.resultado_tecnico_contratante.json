@@ -1,0 +1,92 @@
+[
+  {
+    "description":"Llave del registro",
+    "mode": "NULLABLE",
+    "name": "C008_row_key",
+    "type": "STRING"
+  },
+  {
+  "description":"Identificador de la persona contratante poliza",
+  "mode": "NULLABLE",
+  "name": "C008_id_persona",
+  "type": "STRING"
+  },
+  {
+    "description":"descripcion del riesgo (SALUD, RIESGOS LABORALES, PATRIMONIALES, VIDA y NO DETERMINADO)",
+    "mode": "NULLABLE",
+    "name": "C008_des_riesgo",
+    "type": "STRING"
+  },
+  {
+    "description":"El valor del año para el periodo del resultado tecnico del cliente",
+    "mode": "NULLABLE",
+    "name": "C008_val_anho",
+    "type": "STRING"
+  },
+  {
+    "description":"suma de montos de Primas",
+    "mode": "NULLABLE",
+    "name": "C008_mnt_prima_total_usd",
+    "type": "NUMERIC"
+  },
+  {
+    "description":"suma de montos de Primas y de Reaseguros",
+    "mode": "NULLABLE",
+    "name": "C008_mnt_prima_retenida_usd",
+    "type": "NUMERIC"
+  },
+  {
+    "description":"suma de montos de Siniestros",
+    "mode": "NULLABLE",
+    "name": "C008_mnt_siniestros_total_usd",
+    "type": "NUMERIC"
+  },
+  {
+    "description":"suma de montos de Siniestros y de Siniestros Cedidos",
+    "mode": "NULLABLE",
+    "name": "C008_mnt_siniestros_retenidos_usd",
+    "type": "NUMERIC"
+  },
+  {
+    "description":"Resultado tecnico del cliente",
+    "mode": "NULLABLE",
+    "name": "C008_mnt_resultado_tecnico_total_usd",
+    "type": "NUMERIC"
+  },
+  {
+    "description":"la ultima Fecha de procesamiento del resultado tecnico del cliente",
+    "mode": "NULLABLE",
+    "name": "C008_fec_ultima_procesamiento",
+    "type": "DATE"
+  },
+  {
+    "description":"porcentaje del resultado tecnico del cliente (mnt_resultado_tecnico_total_usd/ mnt_prima_total_usd)",
+    "mode": "NULLABLE",
+    "name": "C008_por_resultado_tecnico",
+    "type": "NUMERIC"
+  },
+  {
+    "description":"porcentaje de siniestralidad (mnt_siniestros_total_usd/ mnt_prima_total_usd)",
+    "mode": "NULLABLE",
+    "name": "C008_por_siniestralidad",
+    "type": "NUMERIC"
+  },
+  {
+    "description":"porcentaje de siniestralidad retenida (mnt_siniestros_retenidos_usd /mnt_prima_retenida_usd)",
+    "mode": "NULLABLE",
+    "name": "C008_por_siniestralidad_retenida",
+    "type": "NUMERIC"
+  },
+  {
+    "description":"Fecha del procesamiento",
+    "mode": "NULLABLE",
+    "name": "C008_fec_procesamiento",
+    "type": "DATE"
+  },
+  {
+    "description":"periodo de la fecha del procesamiento",
+    "mode": "NULLABLE",
+    "name": "C008_periodo",
+    "type": "DATE"
+  }
+]

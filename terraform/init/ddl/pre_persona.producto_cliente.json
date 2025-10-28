@@ -1,0 +1,122 @@
+[
+    {
+        "mode": "NULLABLE",
+        "name": "C005_row_key",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_id_producto_cliente",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_tip_documento",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_num_documento",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_id_poliza",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_cod_clave_unico_cliente_contratante",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_nom_contratante",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_des_agrupacion_n1",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_des_agrupacion_n2",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_des_agrupacion_n3",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_id_producto",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_cod_producto_origen",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_des_producto",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_id_estado_poliza_origen",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_pol_num_poliza",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_fec_inicio_vigencia_poliza",
+        "type": "DATE"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_fec_fin_vigencia_poliza",
+        "type": "DATE"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_fec_anulacion_poliza",
+        "type": "DATE"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_cer_id_certificado",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_id_estado_origen_certificado",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_fec_inicio_vigencia_certificado",
+        "type": "DATE"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_fec_fin_vigencia_certificado",
+        "type": "DATE"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_fec_anulacion_certificado",
+        "type": "DATE"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "C005_periodo",
+        "type": "DATE"
+    }
+]

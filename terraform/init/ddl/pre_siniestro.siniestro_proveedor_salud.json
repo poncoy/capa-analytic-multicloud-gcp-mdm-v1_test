@@ -1,0 +1,86 @@
+[
+    {
+      "description": "Llave principal",  
+      "mode": "NULLABLE",
+        "name": "C006_row_key",
+        "type": "STRING"
+      },
+    {
+      "description": "Fecha en que se notifica a Rimac del siniestro",
+        "mode": "NULLABLE",
+        "name": "C006_fec_notificacion",
+        "type": "STRING"
+      },
+      {
+        "description": "Fecha en que Rimac devuelve el siniestro al proveedor por alguna observacion que debe ser resuelta",
+          "mode": "NULLABLE",
+          "name": "C006_fec_devolucion",
+          "type": "STRING"
+        },
+    {
+      "description": "Numero del documento del proveedor",
+        "mode": "NULLABLE",
+        "name": "C006_num_documento_proveedor",
+        "type": "STRING"
+      },
+    {
+      "description": "Codigo del estado del siniestro",
+        "mode": "NULLABLE",
+        "name": "C006_id_estado_siniestro_origen",
+        "type": "STRING"
+      },
+    {
+      "description": "Descripcion del siniestro segun su core origen",
+        "mode": "NULLABLE",
+        "name": "C006_des_estado_siniestro_origen",
+        "type": "STRING"
+      },
+    {
+      "description": "Logica para grupar segun el id_estado_siniestro_origen",
+        "mode": "NULLABLE",
+        "name": "C006_des_grupo_siniestro",
+        "type": "STRING"
+      },
+    {
+      "description": "Indica si el registro del siniestro se dio por trama tdef o registro manual de un usuario",
+        "mode": "NULLABLE",
+        "name": "C006_ind_registrado_trama",
+        "type": "STRING"
+      },
+    {
+      "description": "Monto total en soles que es enviado a Rimac por el proveedor, el cual es evaluado y ajustado de ser el caso  para solicicar el pagado",
+        "mode": "NULLABLE",
+        "name": "C006_mnt_documento_registrado_sol",
+        "type": "NUMERIC"
+      },
+    {
+      "description": "",
+        "mode": "NULLABLE",
+        "name": "C006_des_origen_factura",
+        "type": "STRING"
+      },
+    {
+      "description": "Conteo de diferentes codigos de siniestro",
+        "mode": "NULLABLE",
+        "name": "C006_cnt_siniestro",
+        "type": "INTEGER"
+      },
+    {
+      "description": "Reagrupa los grupos de motivo de devolución",
+        "mode": "NULLABLE",
+        "name": "C006_des_grupo_motivo_devolucion",
+        "type": "STRING"
+      },
+      {
+        "description": "Periodo para identificar en el portal salud",
+        "mode": "NULLABLE",
+        "name": "C006_periodo",
+        "type": "DATE"
+      },
+      {
+        "description": "Filtrar la sede del proveedor en el portal salud",
+        "mode": "NULLABLE",
+        "name": "C006_cod_sede_proveedor_siniestro",
+        "type": "STRING"
+      }          
+]

@@ -1,0 +1,103 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/rs-nprd-dlk-dt-rapi-cd22/instances/ue4-nonprod-rapi-gbt-uni/tables/uni__siniestro_carta_garantia_salud"
+    ],
+    "bigtableOptions": {
+        "readRowkeyAsString": "true",
+        "columnFamilies": [
+            {
+                "familyId": "siniestro_carta_garantia_salud",
+                "columns": [
+                    {
+                        "qualifierString": "tip_documento_afiliado",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_documento_afiliado",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "id_persona_afiliado",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "des_diagnostico_salud",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_diagnostico_origen",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "fec_solicitud",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "des_producto",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "agrupacion_cobertura",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "mnt_solicitado",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "mnt_autorizado",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "por_cobertura_carta",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "des_procedimiento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "nom_medico",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_colegio_medico",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "des_razon_social_proveedor",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_siniestro",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "cod_proceso_bpm",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_carta_garantia",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "des_est_carta_garantia_origen",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "fec_ult_liquidacion",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "periodo",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            }
+        ]
+    }
+}

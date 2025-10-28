@@ -1,0 +1,936 @@
+[
+	{
+	  "name": "id_cliente_persona",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "cuc",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "cuc_titular",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_id_poliza",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_num_poliza",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_id_contratante",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "ape_paterno_contratante",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "Apellido paterno del contratante de la poliza",
+	  "fields": []
+	},
+	{
+	  "name": "ape_materno_contratante",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "Apellido materno del contratante de la poliza",
+	  "fields": []
+	},
+	{
+	  "name": "nom_contratante",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "Nombres sin apellidos del contratante de la poliza",
+	  "fields": []
+	},
+	{
+	  "name": "tip_documento_contratante",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "Tipo de documento del contratante",
+	  "fields": []
+	},
+	{
+	  "name": "num_documento_contratante",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "Numero de documento del contratante",
+	  "fields": []
+	},
+	{
+	  "name": "cuc_contratante",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_des_contratante",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_id_estado_poliza_origen",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_des_estado_origen",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_fec_emision",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_fec_inicio_vigencia",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_fec_fin_vigencia",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_fec_anulacion",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_fec_renovacion",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_des_motivo_anulacion",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_id_canal",
+	  "mode": "",
+	  "type": "INTEGER",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_des_canal",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_id_subcanal",
+	  "mode": "",
+	  "type": "INTEGER",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_des_subcanal",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_id_corredor",
+	  "mode": "",
+	  "type": "INTEGER",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_des_corredor",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_id_canalnt",
+	  "mode": "",
+	  "type": "INTEGER",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_des_canalnt",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_id_intermediario",
+	  "mode": "",
+	  "type": "INTEGER",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_nom_intermediario",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_frecuencia_pago",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_id_moneda_origen",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_id_via_cobro",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_des_via_cobro",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_ind_gestionable",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_ind_alto_valor",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "pol_ind_renovacion_autom",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "datos_planes",
+	  "mode": "REPEATED",
+	  "type": "RECORD",
+	  "description": "",
+	  "fields": [
+		{
+		  "name": "id_plan",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "id_plan_origen",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "des_plan",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "id_version_plan",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "des_version_plan",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "id_version_plan_origen",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "des_detalle_plan_asegurado",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "des_tip_devolucion_vida",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "des_ramo",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "ind_ramo_principal",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "ramo_principal_origen",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "fec_inicio_vigencia_rua",
+		  "mode": "",
+		  "type": "DATE",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "fec_fin_vigencia_rua",
+		  "mode": "",
+		  "type": "DATE",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "fec_exclusion_rua",
+		  "mode": "",
+		  "type": "DATE",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "des_estado_ramo_ua",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "des_motivo_exclusion_rua",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "id_origen_rua",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "num_max_auxilio_mecanico",
+		  "mode": "",
+		  "type": "INTEGER",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "num_max_chofer_reemp",
+		  "mode": "",
+		  "type": "INTEGER",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "datos_coberturas",
+		  "mode": "REPEATED",
+		  "type": "RECORD",
+		  "description": "",
+		  "fields": [
+			{
+			  "name": "id_cobertura_unidad_asegurable",
+			  "mode": "",
+			  "type": "STRING",
+			  "description": "",
+			  "fields": []
+			},
+			{
+			  "name": "id_cobertura",
+			  "mode": "",
+			  "type": "STRING",
+			  "description": "",
+			  "fields": []
+			},
+			{
+			  "name": "des_cobertura_origen",
+			  "mode": "",
+			  "type": "STRING",
+			  "description": "",
+			  "fields": []
+			},
+			{
+			  "name": "tip_cobertura",
+			  "mode": "",
+			  "type": "STRING",
+			  "description": "",
+			  "fields": []
+			},
+			{
+			  "name": "fec_inicio_vigencia",
+			  "mode": "",
+			  "type": "DATE",
+			  "description": "",
+			  "fields": []
+			},
+			{
+			  "name": "fec_fin_vigencia",
+			  "mode": "",
+			  "type": "DATE",
+			  "description": "",
+			  "fields": []
+			},
+			{
+			  "name": "estado_cobertura",
+			  "mode": "",
+			  "type": "STRING",
+			  "description": "",
+			  "fields": []
+			},
+			{
+			  "name": "fec_exclusion",
+			  "mode": "",
+			  "type": "DATE",
+			  "description": "",
+			  "fields": []
+			},
+			{
+			  "name": "des_motivo_exclusion",
+			  "mode": "",
+			  "type": "STRING",
+			  "description": "",
+			  "fields": []
+			},
+			{
+			  "name": "cob_id_moneda",
+			  "mode": "",
+			  "type": "STRING",
+			  "description": "",
+			  "fields": []
+			},
+			{
+			  "name": "mto_suma_asegurada",
+			  "mode": "",
+			  "type": "NUMERIC",
+			  "description": "",
+			  "fields": []
+			},
+			{
+			  "name": "mto_suma_asegurada_usd",
+			  "mode": "",
+			  "type": "NUMERIC",
+			  "description": "Campo calculado, monto de la suma asegurada en dolares",
+			  "fields": []
+			},
+			{
+			  "name": "mto_tasa",
+			  "mode": "",
+			  "type": "NUMERIC",
+			  "description": "",
+			  "fields": []
+			},
+			{
+			  "name": "ind_principal",
+			  "mode": "",
+			  "type": "STRING",
+			  "description": "",
+			  "fields": []
+			},
+			{
+			  "name": "ind_acumula_suma",
+			  "mode": "",
+			  "type": "STRING",
+			  "description": "",
+			  "fields": []
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "name": "info_vehiculo",
+	  "mode": "REPEATED",
+	  "type": "RECORD",
+	  "description": "",
+	  "fields": [
+		{
+		  "name": "num_placa",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "num_motor",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "num_serie",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "des_clase",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "des_marca",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "des_modelo",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "num_vin",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "num_anio_fabricacion",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "num_asiento",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "num_placa_anterior",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "des_color",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "num_puertas",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		},
+		{
+		  "name": "valor_vehiculo",
+		  "mode": "",
+		  "type": "STRING",
+		  "description": "",
+		  "fields": []
+		}
+	  ]
+	},
+	{
+	  "name": "des_riesgo",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "des_agrupacion_n1",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "des_agrupacion_n2",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "des_agrupacion_n3",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "des_agrupacion_n4",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "descripción de la agrupación n4",
+	  "fields": []
+	},
+	{
+	  "name": "id_producto",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "cod_producto_origen",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "des_producto",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "des_nivel_riesgo_prod",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "cer_id_certificado",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "cer_num_certificado",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "cer_origen",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "cer_fec_inicio_vigencia",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "cer_fec_fin_vigencia",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "cer_fec_anulacion",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "cer_id_estado_origen",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "cer_des_motivo_exclusion",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "cer_mnt_prima_convenida",
+	  "mode": "",
+	  "type": "NUMERIC",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "asg_tipo_afiliado",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "asg_fec_creacion",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "asg_id_parentesco",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "asg_fec_ingreso",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "asg_fec_fin",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "asg_id_estado",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "mnt_prima_emitida_usd",
+	  "mode": "",
+	  "type": "NUMERIC",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "mnt_prima_mensual_usd",
+	  "mode": "",
+	  "type": "NUMERIC",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "mnt_prima_anual_usd",
+	  "mode": "",
+	  "type": "NUMERIC",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "mnt_prima_contable_usd",
+	  "mode": "",
+	  "type": "NUMERIC",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "mnt_prima_emitida_bruta_anual",
+	  "mode": "",
+	  "type": "NUMERIC",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "mnt_prima_emitida_bruta_anual_usd",
+	  "mode": "",
+	  "type": "NUMERIC",
+	  "description": "Campo calculado, monto de la prima bruta emitida anual en dolares",
+	  "fields": []
+	},
+	{
+	  "name": "mnt_derecho_emision_usd",
+	  "mode": "",
+	  "type": "NUMERIC",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "mnt_comision_usd",
+	  "mode": "",
+	  "type": "NUMERIC",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "des_regimen_laft_certificado",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "Campo calculado, descripción del regimen en base al certificado",
+	  "fields": []
+	},
+	{
+	  "name": "tip_plan_credito",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "Variable que guarda el tipo de plan asociado a un crédito",
+	  "fields": []
+	},
+	{
+	  "name": "id_estado_poliza",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "descripción del estado de la poliza homologada",
+	  "fields": []
+	},
+	{
+	  "name": "id_estado_certificado",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "descripción del estado del certificado homologada",
+	  "fields": []
+	},
+	{
+	  "name": "id_origen_poliza",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "identificador del origen de la póliza",
+	  "fields": []
+	},
+	{
+	  "name": "id_certificado_origen",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "origen del certificado",
+	  "fields": []
+	},
+	{
+	  "name": "fec_inicio_vigencia_certificado_kpi",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "Fecha de Primera Vigencia del certificado,solo se utilizara para el KPI de Clientes",
+	  "fields": []
+	},
+	{
+	  "name": "fec_exclusion_certificado",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "fecha de exclusion del certificado",
+	  "fields": []
+	},
+	{
+	  "name": "cod_producto",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "codigo del producto",
+	  "fields": []
+	},
+	{
+	  "name": "cod_riesgo",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "codigo del riesgo del producto",
+	  "fields": []
+	},
+	{
+	  "name": "id_poliza_origen",
+	  "mode": "",
+	  "type": "STRING",
+	  "description": "Identificador de la poliza en el sistema origen",
+	  "fields": []
+	},
+	{
+	  "name": "periodo",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "",
+	  "fields": []
+	},
+	{
+	  "name": "fec_procesamiento",
+	  "mode": "",
+	  "type": "DATE",
+	  "description": "",
+	  "fields": []
+	}
+  ]

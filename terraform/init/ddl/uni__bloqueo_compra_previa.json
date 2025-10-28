@@ -1,0 +1,38 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/rs-nprd-dlk-dt-rapi-cd22/instances/ue4-nonprod-rapi-gbt-uni/tables/uni__bloqueo_compra_previa"
+    ],
+    "bigtableOptions": {
+        "readRowkeyAsString": "true",
+        "columnFamilies": [
+            {
+                "familyId": "cross_columns",
+                "columns": [
+                    {
+                        "qualifierString": "C000_id_bloqueo_compra_previa",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT"
+            },
+            {
+                "familyId": "C001_block_leads",
+                "columns": [
+                    {"qualifierString": "C001_tip_documento","type": "STRING"},
+                    {"qualifierString": "C001_num_documento","type": "STRING"},
+                    {"qualifierString": "C001_cod_producto_origen","type": "STRING"},
+                    {"qualifierString": "C001_des_agrupacion_n1","type": "BYTES","encoding":"BINARY"},
+                    {"qualifierString": "C001_des_agrupacion_n2","type": "BYTES","encoding":"BINARY"},
+                    {"qualifierString": "C001_des_agrupacion_n3","type": "BYTES","encoding":"BINARY"},
+                    {"qualifierString": "C001_num_placa","type": "STRING"},
+                    {"qualifierString": "C001_des_subcanal","type": "STRING"},
+                    {"qualifierString": "C001_periodo","type": "STRING"}
+                ],
+                "type": "STRING",
+                "encoding": "TEXT"
+            }
+        ]
+    }
+}

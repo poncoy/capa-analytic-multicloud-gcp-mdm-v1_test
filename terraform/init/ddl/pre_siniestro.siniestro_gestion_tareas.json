@@ -1,0 +1,140 @@
+[
+  {
+    "description": "Llave principal",
+    "mode": "NULLABLE",
+    "name": "C009_row_key",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica la fecha de inicio de la actividad que atiende el siniestro.",
+    "mode": "NULLABLE",
+    "name": "C009_fec_inicio_actividad",
+    "type": "DATE"
+  },
+  {
+    "description": "Indica la fecha de finalización de la actividad que atiende el siniestro.",
+    "mode": "NULLABLE",
+    "name": "C009_fec_fin_actividad",
+    "type": "DATE"
+  },
+  {
+    "description": "Indica la bandeja de las tareas.",
+    "mode": "NULLABLE",
+    "name": "C009_des_actividad_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica si el siniestro tiene autitoria medica.",
+    "mode": "NULLABLE",
+    "name": "C009_des_tipo_proceso_auditoria",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica si el siniestro tiene auditoria administrativa.",
+    "mode": "NULLABLE",
+    "name": "C009_val_proceso_auditoria_admin",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica el numero de documento de identificacion del proveedor",
+    "mode": "NULLABLE",
+    "name": "C009_cod_proveedor",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica la Sede del Proveedor",
+    "mode": "NULLABLE",
+    "name": "C009_cod_sede_proveedor",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica el usuario asignado a la tarea",
+    "mode": "NULLABLE",
+    "name": "C009_des_correo_corporativo",
+    "type": "STRING"
+  },
+  {
+    "description": "Periodo",
+    "mode": "NULLABLE",
+    "name": "C009_periodo",
+    "type": "DATETIME"
+  },
+  {
+    "description": "Descripcion agrupada del proceso de las tareas",
+    "mode": "NULLABLE",
+    "name": "C009_des_detalle_tarea",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica el monto en soles por cada tarea",
+    "mode": "NULLABLE",
+    "name": "C009_mnt_detalle_tarea",
+    "type": "NUMERIC"
+  },
+  {
+    "description": "Indica la cantidad de tareas agrupadas según el proceso",
+    "mode": "NULLABLE",
+    "name": "C009_cnt_detalle_tarea",
+    "type": "INTEGER"
+  },
+  {
+    "description": "Descripcion agrupada del estado de asignación de tareas",
+    "mode": "NULLABLE",
+    "name": "C009_des_asignacion_tarea",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica la cantidad de tareas según su estado de asignacion",
+    "mode": "NULLABLE",
+    "name": "C009_cnt_asignacion_tarea",
+    "type": "INTEGER"
+  },
+  {
+    "description": "Indica el estado del vencimiento de tareas",
+    "mode": "NULLABLE",
+    "name": "C009_des_vencimiento_tarea",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica la cantidad de tareas según su estado de vencimiento",
+    "mode": "NULLABLE",
+    "name": "C009_cnt_vencimiento_tarea",
+    "type": "INTEGER"
+  },
+  {
+    "description": "Indica la razon social del proveedor",
+    "mode": "NULLABLE",
+    "name": "C009_nom_completo_proveedor_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica la cantidad de tareas según lo proveedores",
+    "mode": "NULLABLE",
+    "name": "C009_cnt_tareas_proveedor",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica el tipo de liquidacion",
+    "mode": "NULLABLE",
+    "name": "C009_des_tipo_liquidacion",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica la cantidad de tareas según el tipo de liquidacion",
+    "mode": "NULLABLE",
+    "name": "C009_cnt_liquidacion",
+    "type": "INTEGER"
+  },
+  {
+    "description": "Indica el tipo de devolucion",
+    "mode": "NULLABLE",
+    "name": "C009_des_tipo_devolucion",
+    "type": "STRING"
+  },
+  {
+    "description": "Indica la cantidad de tareas según el tipo de devolucion",
+    "mode": "NULLABLE",
+    "name": "C009_cnt_devolucion",
+    "type": "INTEGER"
+  }
+]

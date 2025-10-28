@@ -1,0 +1,265 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/rs-nprd-dlk-dt-rapi-cd22/instances/ue4-nonprod-rapi-gbt-uni/tables/uni__persona"
+    ],
+    "bigtableOptions": {
+        "readRowkeyAsString": "true",
+        "columnFamilies": [
+            {
+                "familyId": "cross_columns",
+                "columns": [
+                    {
+                        "qualifierString": "C000_id_persona",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C000_tip_documento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C000_num_documento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C000_periodo",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C000_cod_claveunicocliente",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            },
+            {
+                "familyId": "C002_hyper_leads",
+                "columns": [
+                    {
+                        "qualifierString": "C002_nom_persona",
+                        "type": "BYTES",
+                        "encoding": "BINARY"
+                    },
+                    {
+                        "qualifierString": "C002_ape_paternopersona",
+                        "type": "BYTES",
+                        "encoding": "BINARY"
+                    },
+                    {
+                        "qualifierString": "C002_ape_maternopersona",
+                        "type": "BYTES",
+                        "encoding": "BINARY"
+                    },
+                    {
+                        "qualifierString": "C002_fec_nacimiento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_cod_nivel_socio_economico",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_cod_nivel_socio_economico_agrupado",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_nom_departamento",
+                        "type": "BYTES",
+                        "encoding": "BINARY"
+                    },
+                    {
+                        "qualifierString": "C002_nom_provincia",
+                        "type": "BYTES",
+                        "encoding": "BINARY"
+                    },
+                    {
+                        "qualifierString": "C002_nom_distrito",
+                        "type": "BYTES",
+                        "encoding": "BINARY"
+                    },
+                    {
+                        "qualifierString": "C002_num_edad",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_ind_menor_edad_2",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_ind_dependiente_laboral",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_ind_cliente",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_ind_tiene_tarjeta_credito",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_ind_fallecido",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_ind_royal",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_ind_cliente_nuevo",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_ind_critico",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_ind_trabaja_empresa_seguros",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_ind_cliente_vip",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_ind_empleado_rimac",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_ind_trabajador_empresa_riesgo_desuscrito",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C002_ind_cliente_corredor_bloqueo_comercial",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            },
+            {
+                "familyId": "C003_hyper_crm",
+                "columns": [
+                    {
+                        "qualifierString": "C003_ind_blacklist",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_ind_ley_datos_personales",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_ind_consentimiento_comercial",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_des_empresa_laboral",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_val_propension_vehicular",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_val_propension_ami",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_val_persistenciavn_vidaahorro_4_colores",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_val_persistenciavn_vehicular",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_val_persistenciavn_ami",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_val_score_venta_ami",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_val_score_venta_vehicular",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_val_persistenciavn_vida_sepelio",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_num_ruc_empresa_laboral",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_des_segmentacion_growth",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_val_propension_flexividcon",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C003_ind_dependiente_laboral",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            },
+            {
+                "familyId": "C004_cliente_eb",
+                "columns": [
+                    {
+                        "qualifierString": "C004_nom_persona",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C004_ape_paternopersona",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C004_ape_maternopersona",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C004_fec_nacimiento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C004_nom_departamento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C004_nom_provincia",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C004_nom_distrito",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C004_num_edad",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C004_ind_cliente",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C004_des_segmentacion_growth",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            }
+        ]
+    }
+}

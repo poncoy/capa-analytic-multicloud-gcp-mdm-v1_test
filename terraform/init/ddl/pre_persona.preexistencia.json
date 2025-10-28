@@ -1,0 +1,86 @@
+[
+    {
+        "description": "Llave principal, combinación única de varios identificadores relacionados a una preexistencia.",
+        "mode": "NULLABLE",
+        "name": "row_key",
+        "type": "STRING"
+    },
+    {
+        "description": "Tipo de documento de la persona asociado a la preexistencia.",
+        "mode": "NULLABLE",
+        "name": "tip_documento",
+        "type": "STRING"
+    },
+    {
+        "description": "Número de documento de la persona asociado a la preexistencia.",
+        "mode": "NULLABLE",
+        "name": "num_documento",
+        "type": "STRING"
+    },
+    {
+        "description": "Identificador único de la persona asociado a la preexistencia para vincularla con su perfil y detalles de salud.",
+        "mode": "NULLABLE",
+        "name": "id_persona",
+        "type": "STRING"
+    },
+    {
+        "description": "Código identificador de origen de la preexistencia.",
+        "mode": "NULLABLE",
+        "name": "cod_preexistencia_origen",
+        "type": "STRING"
+    },
+    {
+        "description": "Descripción detallada de la preexistencia como enfermedades crónicas, condiciones previas o factores de riesgo.",
+        "mode": "NULLABLE",
+        "name": "des_preexistencia",
+        "type": "STRING"
+    },
+    {
+        "description": "Fecha de inicio de vigencia de la preexistencia.",
+        "mode": "NULLABLE",
+        "name": "fec_inicio_vigencia_preexistencia",
+        "type": "DATE"
+    },
+    {
+        "description": "Número del trámite de inclusión de la preexistencia.",
+        "mode": "NULLABLE",
+        "name": "num_tramite_preexistencia_inclusion",
+        "type": "STRING"
+    },
+    {
+        "description": "Nombre del producto asociado a la preexistencia.",
+        "mode": "NULLABLE",
+        "name": "nom_producto",
+        "type": "STRING"
+    },
+    {
+        "description": "Estado de origen de la preexistencia.",
+        "mode": "NULLABLE",
+        "name": "est_preexistencia_origen",
+        "type": "STRING"
+    },
+    {
+        "description": "Número del trámite de exclusión de la preexistencia.",
+        "mode": "NULLABLE",
+        "name": "num_tramite_preexistencia_exclusion",
+        "type": "STRING"
+    },
+    {
+        "description": "Fecha de fin de vigencia de la preexistencia.",
+        "mode": "NULLABLE",
+        "name": "fec_fin_vigencia_preexistencia",
+        "type": "DATE"
+    },
+    {
+        "description": "Indicador de fraude registrado en la preexistencia.",
+        "mode": "NULLABLE",
+        "name": "ind_fraude",
+        "type": "STRING"
+    },
+    {
+        "description": "Periodo de tiempo relevante para la preexistencia.",
+        "mode": "NULLABLE",
+        "name": "periodo",
+        "type": "DATE"
+    }
+]

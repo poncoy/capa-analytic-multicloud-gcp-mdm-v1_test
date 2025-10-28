@@ -1,0 +1,134 @@
+[
+  {
+    "description": "Llave principal, combinación única de varios identificadores relacionados a un siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "row_key",
+    "type": "STRING"
+  },
+  {
+    "description": "Tipo de documento del afiliado (por ejemplo, DNI, pasaporte, etc.).",
+    "mode": "NULLABLE",
+    "name": "tip_documento_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Número de documento del afiliado (cliente asegurado) en el sistema.",
+    "mode": "NULLABLE",
+    "name": "num_documento_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Código del asegurado asociado al siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "id_persona_afiliado",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripción del diagnóstico relacionado con el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "des_diagnostico_salud",
+    "type": "STRING"
+  },
+  {
+    "description": "Código del diagnóstico al que pertenece el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "num_diagnostico_origen",
+    "type": "STRING"
+  },
+  {
+    "description": "Fecha en que se realizó la solicitud de la carta de garantía.",
+    "mode": "NULLABLE",
+    "name": "fec_solicitud",
+    "type": "DATE"
+  },
+  {
+    "description": "Descripción del producto o servicio relacionado con el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "des_producto",
+    "type": "STRING"
+  },
+  {
+    "description": "Descripción de la cobertura asociada al siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "agrupacion_cobertura",
+    "type": "STRING"
+  },
+  {
+    "description": "Monto solicitado en la carta de garantía, en soles.",
+    "mode": "NULLABLE",
+    "name": "mnt_solicitado",
+    "type": "FLOAT"
+  },
+  {
+    "description": "Monto autorizado en la carta de garantía, en soles.",
+    "mode": "NULLABLE",
+    "name": "mnt_autorizado",
+    "type": "FLOAT"
+  },
+  {
+    "description": "Monto por cobertura de la carta de garantía, en soles.",
+    "mode": "NULLABLE",
+    "name": "por_cobertura_carta",
+    "type": "FLOAT"
+  },
+  {
+    "description": "Descripción del procedimiento realizado relacionado con el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "des_procedimiento",
+    "type": "STRING"
+  },
+  {
+    "description": "Nombre del médico relacionado con el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "nom_medico",
+    "type": "STRING"
+  },
+  {
+    "description": "Número de colegio médico del profesional involucrado en el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "num_colegio_medico",
+    "type": "STRING"
+  },
+  {
+    "description": "Razón social del proveedor asociado al siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "des_razon_social_proveedor",
+    "type": "STRING"
+  },
+  {
+    "description": "Número de siniestro relacionado con el trámite o solicitud.",
+    "mode": "NULLABLE",
+    "name": "num_siniestro",
+    "type": "STRING"
+  },
+  {
+    "description": "Código BPM asociado al siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "cod_proceso_bpm",
+    "type": "STRING"
+  },
+  {
+    "description": "Número de carta asociada al trámite o solicitud.",
+    "mode": "NULLABLE",
+    "name": "num_carta_garantia",
+    "type": "STRING"
+  },
+  {
+    "description": "Estado de la carta de garantía (aprobada, rechazada, etc.).",
+    "mode": "NULLABLE",
+    "name": "des_est_carta_garantia_origen",
+    "type": "STRING"
+  },
+  {
+    "description": "Fecha en que se realizó la liquidación del monto solicitado.",
+    "mode": "NULLABLE",
+    "name": "fec_ult_liquidacion",
+    "type": "DATE"
+  },
+  {
+    "description": "Periodo de tiempo relevante para el siniestro o trámite.",
+    "mode": "NULLABLE",
+    "name": "periodo",
+    "type": "DATE"
+  }
+]

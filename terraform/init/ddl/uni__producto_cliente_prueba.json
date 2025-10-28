@@ -1,0 +1,68 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/rs-nprd-dlk-dt-rapi-cd22/instances/ue4-nonprod-rapi-gbt-uni/tables/uni__producto_cliente_prueba"
+    ],
+    "bigtableOptions": {
+        "readRowkeyAsString": "true",
+        "columnFamilies": [
+            {
+                "familyId": "cross_columns",
+                "columns": [
+                    {
+                        "qualifierString": "C005_tip_documento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C005_num_documento",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C005_id_poliza",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C005_cod_producto_origen",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C005_pol_num_poliza",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "C005_cer_id_certificado",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            },
+            {
+                "familyId": "C005_productos_eb",
+                "columns": [
+                    {"qualifierString": "C005_id_producto_cliente","type": "STRING"},
+                    {"qualifierString": "C005_cod_clave_unico_cliente_contratante","type": "STRING"},
+                    {"qualifierString": "C005_nom_contratante","type": "STRING"},
+                    {"qualifierString": "C005_des_agrupacion_n1","type": "STRING"},
+                    {"qualifierString": "C005_des_agrupacion_n2","type": "STRING"},
+                    {"qualifierString": "C005_des_agrupacion_n3","type": "STRING"},
+                    {"qualifierString": "C005_id_producto","type": "STRING"},
+                    {"qualifierString": "C005_des_producto","type": "STRING"},
+                    {"qualifierString": "C005_id_estado_poliza_origen","type": "STRING"},
+                    {"qualifierString": "C005_fec_inicio_vigencia_poliza","type": "STRING"},
+                    {"qualifierString": "C005_fec_fin_vigencia_poliza","type": "STRING"},
+                    {"qualifierString": "C005_fec_anulacion_poliza","type": "STRING"},
+                    {"qualifierString": "C005_id_estado_origen_certificado","type": "STRING"},
+                    {"qualifierString": "C005_fec_inicio_vigencia_certificado","type": "STRING"},
+                    {"qualifierString": "C005_fec_fin_vigencia_certificado","type": "STRING"},
+                    {"qualifierString": "C005_fec_anulacion_certificado","type": "STRING"},
+                    {"qualifierString": "C005_periodo","type": "STRING"}
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            }
+        ]
+    }
+}

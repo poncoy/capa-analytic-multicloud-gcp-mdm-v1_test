@@ -1,0 +1,792 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "id_cliente_persona",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "cuc",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tip_documento",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "num_documento",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "cod_acselx",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ape_paterno",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ape_materno",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "nombres",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "nombre_completo",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fec_nacimiento",
+    "type": "DATE"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "num_edad",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_rango_edad",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_generacion",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_sexo",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_estado_civil",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_nacionalidad",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_pais_origen",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_grado_instruccion",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_fallecido",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "nse_rimac",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "nse_agrup",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_segmentacion_growth",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_rango_linea_max_tcred",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_rango_deuda_total_tcred",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_critico",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_yellowlist",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_watchlist",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_blacklist",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_datoscontacto_sinvalidar",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "departamento_gestion_servicio",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "provincia_gestion_servicio",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "distrito_gestion_servicio",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "direccion_gestion_servicio",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "num_ubigeo_gestion_servicio",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_lima_prov",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_empleado_rimac",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_empleado_bbva",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_empleado_breca",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_flag_bbva",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_cliente_cnt",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_cliente_corredor_no_soat",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_cliente_corredor_gerencia_riesgo",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_cliente_corredor_marsh",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_consentimiento_comercial",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_ley_datos_personales",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_ind_dependiente_laboral",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_id_empresa_laboral",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_ruc_empresa_laboral",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_des_empresa_laboral",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_des_score_ingresos",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_tenencia_hijos",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_es_bancarizado",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_des_calificacion_rcc",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_des_banco_principal",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_des_entidad_principal",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_entidad_max_linea_tc",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_ind_tiene_tarjeta_credito",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_ind_tiene_prestamo_personal",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_ind_tiene_prestamo_vehicular",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_ind_tiene_prestamo_hipotecario",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ext_ind_rcc_negativo",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "num_antiguedad_cliente",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "num_polizas_vig",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "num_certificados_vig",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "num_productos",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "num_riesgos",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "num_canales",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "num_corredores",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "num_intermediarios",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_combo_productos",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_combo_riesgos",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "des_combo_canales",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "mnt_prima_cliente_usd",
+    "type": "NUMERIC"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "mnt_prima_promedio_cliente_usd",
+    "type": "NUMERIC"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_gestionable",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_rentable",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_alto_valor",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_titular_alto_valor",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_royal",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "id_persona",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "ind_inv",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "ind_pep",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "ind_ref",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "ind_bloq",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "ind_ong",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "ind_ofac",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "des_estado",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "fec_creacion",
+            "type": "DATE"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_observacion",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_usuario",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "datos_investigado",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "des_estado",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "fec_creacion",
+            "type": "DATE"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "tip_entidad",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_entidad",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_cargo",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_relacion",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_resolucion",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "datos_pep",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "des_estado",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "fec_creacion",
+            "type": "DATE"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_observacion",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "tip_alerta",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_motivo_anul",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "datos_reforzado",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "des_estado",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_observacion",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "cod_vinculo",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_vinculo",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "cod_bloqueo",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_bloqueo",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "fec_ini_bloqueo",
+            "type": "DATE"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "fec_fin_bloqueo",
+            "type": "DATE"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "datos_bloqueo",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "des_estado",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "fec_creacion",
+            "type": "DATE"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_usuario",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_origen",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "cod_tipo_inst",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "tip_inst",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "cod_tipo_cont",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "tip_cont",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "datos_ong",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "des_estado",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "fec_creacion",
+            "type": "DATE"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_observacion",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_usuario",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_tipo",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_origen",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "des_nombre",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "cod_ofac",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "id_proceso",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "nom_cent_trabajo",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "datos_ofac",
+        "type": "RECORD"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "datos_laft",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_pais_sin_riesgo",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_pais_riesgo_no_cooperante",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ind_pais_riesgo_paraiso_fiscal",
+    "type": "INTEGER"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "des_cargo",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "fec_inicio_cargo",
+        "type": "DATE"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "periodo",
+        "type": "DATE"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "num_ruc",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "nom_empresa",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "des_estado_contribuyente",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "fec_fin_baja",
+        "type": "DATE"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "rep_legal",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "des_nombre_score",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "des_valor_score",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "modelo_score",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "id_tercero_sistema",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "id_origen",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "identificador_sistema",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "periodo",
+    "type": "DATE"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fec_procesamiento",
+    "type": "DATE"
+  }
+]

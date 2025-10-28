@@ -1,0 +1,63 @@
+{
+    "sourceFormat": "BIGTABLE",
+    "sourceUris": [
+        "https://googleapis.com/bigtable/projects/rs-nprd-dlk-dt-rapi-cd22/instances/ue4-nonprod-rapi-gbt-uni/tables/uni__siniestro_diagnostico_salud"
+    ],
+    "bigtableOptions": {
+        "readRowkeyAsString": "true",
+        "columnFamilies": [
+            {
+                "familyId": "siniestro_diagnostico_salud",
+                "columns": [
+                    {
+                        "qualifierString": "tip_documento_afiliado",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_documento_afiliado",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "id_persona_afiliado",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_anho_ocurrencia",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "num_diagnostico_origen",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "des_diagnostico_salud",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "mnt_gasto_cubierto_sol",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "ctd_siniestro",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "tip_procedencia",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "nom_completo_afiliado",
+                        "type": "STRING"
+                    },
+                    {
+                        "qualifierString": "periodo",
+                        "type": "STRING"
+                    }
+                ],
+                "type": "STRING",
+                "encoding": "TEXT",
+                "onlyReadLatest": true
+            }
+        ]
+    }
+}
