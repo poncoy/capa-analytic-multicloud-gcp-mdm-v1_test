@@ -1,0 +1,5 @@
+apache-beam[gcp]==2.35.0
+google-api-python-client==2.58.0
+google-cloud-bigtable==1.7.0
+#google-apitools==0.5.32
+

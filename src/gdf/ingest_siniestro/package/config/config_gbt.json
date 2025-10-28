@@ -1,0 +1,130 @@
+{
+	"uni": [
+		{
+			"table_name": "bloqueo_compra_previa",
+			"familyId": "C000_id_bloqueo_compra_previa",
+			"column_family": [
+				{
+					"name": "cross_columns",
+					"columns": [
+						{"qualifierString": "C000_id_bloqueo_compra_previa","type": "STRING"}
+					]
+				},
+				{
+					"name": "C001_block_leads",
+					"columns": [
+						{"qualifierString": "C001_tip_documento","type": "STRING"},
+						{"qualifierString": "C001_num_documento","type": "STRING"},
+						{"qualifierString": "C001_cod_producto_origen","type": "STRING"},
+						{"qualifierString": "C001_des_agrupacion_n1","type": "STRING"},
+						{"qualifierString": "C001_des_agrupacion_n2","type": "STRING"},
+						{"qualifierString": "C001_des_agrupacion_n3","type": "STRING"},
+						{"qualifierString": "C001_periodo","type": "STRING"}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "persona",
+			"familyId": "C000_id_persona",
+			"column_family": [
+				{"name": "cross_columns",
+				"columns": [				
+					{"qualifierString": "C000_id_persona","type": "STRING"},
+					{"qualifierString": "C000_tip_documento","type": "STRING"},
+					{"qualifierString": "C000_num_documento","type": "STRING"},				
+					{"qualifierString": "C000_periodo","type": "STRING"},
+					{"qualifierString": "C000_cod_claveunicocliente","type": "STRING"}								
+			]},
+			{"name": "C002_hyper_leads",
+			"columns": [
+				{"qualifierString": "C002_nom_persona","type": "STRING"},
+				{"qualifierString": "C002_ape_paternopersona","type": "STRING"},
+				{"qualifierString": "C002_ape_maternopersona","type": "STRING"},
+				{"qualifierString": "C002_fec_nacimiento","type": "STRING"},
+				{"qualifierString": "C002_cod_nivel_socio_economico","type": "STRING"},
+				{"qualifierString": "C002_cod_nivel_socio_economico_agrupado","type": "STRING"},
+				{"qualifierString": "C002_nom_departamento","type": "STRING"},
+				{"qualifierString": "C002_nom_provincia","type": "STRING"},
+				{"qualifierString": "C002_nom_distrito","type": "STRING"},
+				{"qualifierString": "C002_num_edad","type": "STRING"},
+				{"qualifierString": "C002_ind_dependiente_laboral","type": "STRING"},
+				{"qualifierString": "C002_ind_cliente","type": "STRING"},
+				{"qualifierString": "C002_ind_tiene_tarjeta_credito","type": "STRING"}
+			]},
+			{"name": "C004_salesforce_rcc",
+			"columns": [
+				{"qualifierString": "C004_des_calificacion_rcc","type": "STRING"}
+			]}
+		]
+		},
+		{
+			"table_name": "empresa",
+			"familyId": "C000_id_empresa",
+			"column_family": [
+				{"name": "cross_columns",
+				"columns": [
+					{"qualifierString": "C000_id_empresa","type": "STRING"}
+				]},
+				{"name": "C004_salesforce_rcc",
+				"columns": [
+					{"qualifierString": "C004_tip_documento","type": "STRING"},
+					{"qualifierString": "C004_num_documento","type": "STRING"},
+					{"qualifierString": "C004_cod_claveunicocliente","type": "STRING"},
+					{"qualifierString": "C004_des_calificacion_rcc","type": "STRING"},
+					{"qualifierString": "C004_ind_cliente","type": "STRING"},
+					{"qualifierString": "C004_periodo","type": "STRING"}
+				]}
+			]
+		},
+		{
+			"table_name": "resultado_tecnico",
+			"familyId": "C000_id_resultado_tecnico",
+			"column_family": [
+				{"name": "cross_columns",
+				"columns": [
+					{"qualifierString": "C000_id_resultado_tecnico","type": "STRING"}					
+				]},
+				{"name": "C003_salesforce_rt",
+				"columns": [
+					{"qualifierString": "C003_id_empresa","type": "STRING"},
+					{"qualifierString": "C003_nom_riesgo","type": "STRING"},
+					{"qualifierString": "C003_mnt_prima_total","type": "STRING"},
+					{"qualifierString": "C003_mnt_reaseguros","type": "STRING"},
+					{"qualifierString": "C003_mnt_siniestros_total","type": "STRING"},
+					{"qualifierString": "C003_mnt_siniestros_cedidos","type": "STRING"},
+					{"qualifierString": "C003_mnt_ajuste_rrc","type": "STRING"},
+					{"qualifierString": "C003_mnt_gastos_tecnicos","type": "STRING"},
+					{"qualifierString": "C003_mnt_comisiones","type": "STRING"},
+					{"qualifierString": "C003_mnt_descuento_reaseguro","type": "STRING"},
+					{"qualifierString": "C003_mnt_reaseguro_aceptado","type": "STRING"},
+					{"qualifierString": "C003_mnt_prov_cobranza_dudosa","type": "STRING"},
+					{"qualifierString": "C003_mnt_siniestros_retenidos","type": "STRING"},
+					{"qualifierString": "C003_mnt_prima_retenida","type": "STRING"},
+					{"qualifierString": "C003_mnt_rt_total","type": "STRING"},
+					{"qualifierString": "C003_fec_ultimo_procesamiento","type": "STRING"},
+					{"qualifierString": "C003_por_resultado_tecnico","type": "STRING"},
+					{"qualifierString": "C003_por_siniestralidad","type": "STRING"},
+					{"qualifierString": "C003_por_siniestralidad_retenida","type": "STRING"},
+					{"qualifierString": "C003_id_canal","type": "STRING"},
+					{"qualifierString": "C003_des_segmento_cliente","type": "STRING"},
+					{"qualifierString": "C003_periodo","type": "STRING"}
+				]}
+			]
+		}
+	],
+	"otra-instancia-prueba1": [
+		{
+			"table_name": "p1-tbl1",
+			"familyId": "",
+			"column_family": []
+		}
+	],
+	"otra-instancia-prueba2": [
+		{
+			"table_name": "p2-tbl1",
+			"familyId": "",
+			"column_family": []
+		}
+	]
+}
