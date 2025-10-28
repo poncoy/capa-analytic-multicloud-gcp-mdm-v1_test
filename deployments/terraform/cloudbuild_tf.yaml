@@ -1,0 +1,103 @@
+steps:
+  - id: 'branch name'
+    name: 'google/cloud-sdk:alpine'
+    entrypoint: 'sh'  
+    args: 
+    - '-c'
+    - |
+        cp config/${BRANCH_NAME}/* terraform/dev/config/ 
+        sed -i 's/env_name/${_ENV_NAME}/g' terraform/dev/config/*.json
+        gsutil cp -r terraform/dev/config gs://ue4-${_ENV_NAME}-init-gcs-rapi-tfstate
+        gsutil ls gs://ue4-${_ENV_NAME}-init-gcs-rapi-tfstate 
+        echo "***********************"
+        echo "$BRANCH_NAME"
+        echo "***********************"
+
+  - id: 'tf init'
+    name: 'hashicorp/terraform:1.0.0'
+    entrypoint: 'sh'
+    args: 
+    - '-c'
+    - |
+        cp config/${BRANCH_NAME}/* terraform/dev/config/ 
+        sed -i 's/env_name/${_ENV_NAME}/g' terraform/dev/config/*.json
+        if [ -d "terraform/dev/" ]; then
+          cd terraform/dev
+          terraform init
+        else
+          for dir in terraform/dev/
+          do 
+            cd ${dir}   
+            env=${dir%*/}
+            env=${env#*/}
+            echo ""
+            echo "*************** TERRAFORM INIT ******************"
+            echo "******* At environment: ${env} ********"
+            echo "*************************************************"
+            terraform init || exit 1
+            cd ../
+          done
+        fi 
+
+  - id: 'tf plan'
+    name: 'hashicorp/terraform:1.0.0'
+    entrypoint: 'sh'
+    args: 
+    - '-c'
+    - | 
+        if [ -d "terraform/dev/" ]; then
+          cd terraform/dev
+          terraform plan
+        else
+          for dir in terraform/dev/
+          do 
+            cd ${dir}   
+            env=${dir%*/}
+            env=${env#*/}  
+            echo ""
+            echo "*************** TERRAFOM PLAN ******************"
+            echo "******* At environment: ${env} ********"
+            echo "*************************************************"
+            terraform plan || exit 1
+            cd ../
+          done
+        fi
+
+  - id: 'tf apply'
+    name: 'hashicorp/terraform:1.0.0'
+    entrypoint: 'sh'
+    args: 
+    - '-c'
+    - | 
+        if [ -d "terraform/dev/" ]; then
+          cd terraform/init
+          terraform init
+          terraform apply -auto-approve
+          cd ../dev
+          terraform apply -auto-approve
+        else
+          echo "***************************** SKIPPING APPLYING *******************************"
+          echo "Branch '$BRANCH_NAME' does not represent an oficial environment."
+          echo "*******************************************************************************"
+        fi
+        
+  - id: 'gcloud noexpire'
+    name: 'google/cloud-sdk:slim'
+    entrypoint: 'bash'  
+    args: 
+      - '-c'
+      - |
+          echo "==================================="
+          subscriptions=$(gcloud beta builds triggers list --filter="tags:noexpire" --project="${_ENV_PRJ}" --region="${_REGION}" --format=json | grep -oP 'subscriptions/\K[^"]+')
+
+          for subscription in $subscriptions; do
+              echo $subscription
+              gcloud pubsub subscriptions update "${subscription}" --expiration-period="never" --project="${_ENV_PRJ}"
+          done
+          echo "==================================="
+ 
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+tags: ['cloud-builders-community'] 
