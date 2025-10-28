@@ -1,0 +1,169 @@
+with cliente_pers_ult_periodo as (
+    select max(periodo) as periodo
+    from 
+    `{PROJECT_ID}.lan_mdm_ingesta.PER__cliente_persona`    
+),
+cmp as (
+    SELECT
+        cp.cuc,
+        cp.id_cliente_persona as id_persona,
+        cp.tip_documento,
+        cp.num_documento,
+        cp.nse_rimac,
+        cp.nse_agrup,
+        case
+            when upper(cast(cp.ext_ind_dependiente_laboral as string)) in ('S', '1', 'SI')
+                then 'SI'
+            else 'NO'
+        end as ext_ind_dependiente_laboral,        
+        cp.periodo,
+        cp.ind_blacklist,
+        case
+            WHEN CAST(cp.ind_ley_datos_personales AS STRING) in ('1')
+                THEN 'SI'
+            ELSE 'NO'
+        end as ind_ley_datos_personales,
+        case
+            WHEN CAST(cp.ind_consentimiento_comercial AS STRING) in ('1')
+                THEN 'SI'
+            ELSE 'NO'
+        end as ind_consentimiento_comercial,
+        cp.ext_des_empresa_laboral,
+        cp.ext_ruc_empresa_laboral,
+        cp.des_segmentacion_growth
+    FROM `{PROJECT_ID}.lan_mdm_ingesta.PER__cliente_persona_merge` cp
+    WHERE
+        cp.ind_royal != 'SI'
+        and cp.num_edad >= 18
+        and cp.periodo in (select periodo from cliente_pers_ult_periodo)
+    UNION ALL
+    SELECT
+        pp.cuc,
+        pp.id_prospecto_persona as id_persona,
+        pp.tip_documento,
+        pp.num_documento,
+        pp.nse_rimac,
+        pp.nse_agrup,
+        pp.ext_ind_dependiente_laboral,
+        pp.periodo,
+        pp.ind_blacklist,
+        CAST(pp.ind_ley_datos_personales AS STRING) AS ind_ley_datos_personales,
+        CAST(pp.ind_consentimiento_comercial AS STRING) AS ind_consentimiento_comercial,
+        pp.ext_des_empresa_laboral,
+        pp.ext_ruc_empresa_laboral,
+        pp.des_segmentacion_growth
+    FROM `{PROJECT_ID}.lan_mdm_ingesta.PER__prospecto_persona_merge` pp
+    WHERE
+        pp.ind_royal != 'SI'
+        and pp.num_edad >= 18
+        and pp.periodo in (select periodo from cliente_pers_ult_periodo)
+),
+scoring_ia as (
+    WITH scoring_ia_n2 as (
+     SELECT psi.id_persona,
+         n2.nombre_tecnico,
+         MAX(n2.fec_procesamiento) as fec_proc,
+     	ARRAY_AGG(n2) origen
+     FROM `{PROJECT_ID}.lan_mdm_ingesta.PER__persona_scoring_ia` psi
+         CROSS JOIN UNNEST(psi.probabilidad_nivel_2) n2
+         WHERE psi.periodo in (select periodo from cliente_pers_ult_periodo)
+             AND psi.fec_procesamiento IN (SELECT MAX(psi2.fec_procesamiento) 
+                         FROM `{PROJECT_ID}.lan_mdm_ingesta.PER__persona_scoring_ia` psi2 
+                         WHERE psi2.id_persona=psi.id_persona AND psi2.periodo=psi.periodo)
+     GROUP BY 1,2
+     ), scoring_ia_n1 as (
+     SELECT psi.id_persona,
+         n1.nombre_tecnico,
+         MAX(n1.fec_procesamiento) as fec_proc,
+     	ARRAY_AGG(n1) origen
+     FROM `{PROJECT_ID}.lan_mdm_ingesta.PER__persona_scoring_ia` psi
+         CROSS JOIN UNNEST(psi.probabilidad_nivel_1) n1
+         WHERE psi.periodo in (select periodo from cliente_pers_ult_periodo)
+             AND psi.fec_procesamiento IN (SELECT MAX(psi2.fec_procesamiento) 
+                         FROM `{PROJECT_ID}.lan_mdm_ingesta.PER__persona_scoring_ia` psi2 
+                         WHERE psi2.id_persona=psi.id_persona AND psi2.periodo=psi.periodo)
+     GROUP BY 1,2
+     ), scoring_ia_n1_ind AS (
+     SELECT 
+     n1.id_persona,
+     n1.nombre_tecnico ,
+     MIN(_n1.valor) as valor
+     FROM scoring_ia_n1 n1
+     	CROSS JOIN UNNEST(n1.origen) _n1
+     WHERE _n1.nombre_tecnico=n1.nombre_tecnico
+         AND _n1.fec_procesamiento=n1.fec_proc
+	 GROUP BY n1.id_persona,n1.nombre_tecnico
+     ), scoring_ia_n2_ind AS (
+     SELECT 
+     n2.id_persona,
+     n2.nombre_tecnico ,
+     MIN(_n2.valor) as valor
+     FROM scoring_ia_n2 n2
+     	CROSS JOIN UNNEST(n2.origen) _n2
+     WHERE _n2.nombre_tecnico=n2.nombre_tecnico
+         AND _n2.fec_procesamiento=n2.fec_proc
+	 GROUP BY n2.id_persona,n2.nombre_tecnico
+     ), scoring_ia_res1 as ( 
+     SELECT cmp1.id_persona id1,
+     		cmp1.valor as ind_propension_ami,
+     		cmp2.valor as ind_persistenciavn_vidaahorro_4_colores,
+     		cmp3.valor as ind_per_persistenciavn_vidasepelio,
+     		cmp4.valor as ind_persistenciavn_ami,
+     		cmp5.valor as ind_score_venta_ami,
+            cmp6.valor as ind_per_propension_flexividcon
+     FROM (SELECT a.id_persona,a.valor FROM scoring_ia_n1_ind a WHERE a.nombre_tecnico="scr_propension_ami") cmp1,
+     	(SELECT a.id_persona,a.valor FROM scoring_ia_n1_ind a WHERE a.nombre_tecnico="scr_persistenciavn_vidaahorro_4_colores") cmp2,
+     	(SELECT a.id_persona,a.valor FROM scoring_ia_n1_ind a WHERE a.nombre_tecnico="scr_per_persistenciavn_vidasepelio") cmp3,
+     	(SELECT a.id_persona,a.valor FROM scoring_ia_n1_ind a WHERE a.nombre_tecnico="scr_persistenciavn_ami") cmp4,
+     	(SELECT a.id_persona,a.valor FROM scoring_ia_n1_ind a WHERE a.nombre_tecnico="scr_score_venta_ami") cmp5,
+        (SELECT a.id_persona,a.valor FROM scoring_ia_n1_ind a WHERE a.nombre_tecnico="scr_per_propension_flexividcon") cmp6	
+     WHERE cmp1.id_persona=cmp2.id_persona
+     	AND cmp1.id_persona=cmp3.id_persona
+     	AND cmp1.id_persona=cmp4.id_persona
+     	AND cmp1.id_persona=cmp5.id_persona
+        AND cmp1.id_persona=cmp6.id_persona
+     ), scoring_ia_res2 as ( 
+     SELECT cmp1.id_persona id2,
+     		cmp1.valor AS ind_propension_vehicular, 
+     		cmp2.valor AS ind_persistenciavn_vehicular,
+     		cmp3.valor AS ind_score_venta_vehicular
+     FROM (SELECT a.id_persona,a.valor FROM scoring_ia_n2_ind a WHERE a.nombre_tecnico="scr_propension_vehicular") cmp1,
+      (SELECT a.id_persona,a.valor FROM scoring_ia_n2_ind a WHERE a.nombre_tecnico="scr_persistenciavn_vehicular") cmp2,
+      (SELECT a.id_persona,a.valor FROM scoring_ia_n2_ind a WHERE a.nombre_tecnico="scr_score_venta_vehicular") cmp3
+     WHERE cmp1.id_persona=cmp2.id_persona
+     	AND cmp1.id_persona=cmp3.id_persona
+     ) SELECT psi.id_persona, r1.*,r2.*
+     	FROM `{PROJECT_ID}.lan_mdm_ingesta.PER__persona_scoring_ia` psi
+     		LEFT JOIN scoring_ia_res1 r1 ON psi.id_persona=r1.id1
+     		LEFT JOIN scoring_ia_res2 r2 ON psi.id_persona=r2.id2
+     WHERE psi.periodo in (select periodo from cliente_pers_ult_periodo)
+)
+SELECT
+    CONCAT(cmp.tip_documento,'#',cmp.num_documento,"#",cmp.cuc,"#",cmp.id_persona) as C000_row_key,    
+    cmp.id_persona as C000_id_persona,
+    cmp.tip_documento as C000_tip_documento,
+    cmp.num_documento as C000_num_documento,
+    cmp.periodo as C000_periodo,
+    cmp.cuc as C000_cod_claveunicocliente,    
+    IF(cmp.tip_documento<>'RUC',cmp.nse_rimac,'')  as C003_cod_nivel_socio_economico,
+    IF(cmp.tip_documento<>'RUC',cmp.nse_agrup,'')  as C003_cod_nivel_socio_economico_agrupado,
+    IFNULL(cmp.ind_blacklist,' ') as C003_ind_blacklist,
+    IFNULL(cmp.ind_ley_datos_personales,' ') as C003_ind_ley_datos_personales,
+    IFNULL(cmp.ind_consentimiento_comercial,' ') as C003_ind_consentimiento_comercial,
+    IFNULL(cmp.ext_des_empresa_laboral,' ') as C003_des_empresa_laboral,
+    IFNULL(s.ind_propension_vehicular,' ') AS C003_val_propension_vehicular,
+	IFNULL(s.ind_propension_ami,' ') AS C003_val_propension_ami,
+	IFNULL(s.ind_persistenciavn_vidaahorro_4_colores,' ') AS C003_val_persistenciavn_vidaahorro_4_colores,
+	IFNULL(s.ind_persistenciavn_vehicular,' ') C003_val_persistenciavn_vehicular,
+	IFNULL(s.ind_persistenciavn_ami,' ') AS C003_val_persistenciavn_ami,
+	IFNULL(s.ind_score_venta_ami,' ') AS C003_val_score_venta_ami,
+	IFNULL(s.ind_score_venta_vehicular,' ') AS C003_val_score_venta_vehicular,
+    IFNULL(s.ind_per_persistenciavn_vidasepelio,' ') as C003_val_persistenciavn_vida_sepelio,
+    IFNULL(cmp.ext_ruc_empresa_laboral,' ') AS C003_num_ruc_empresa_laboral,
+    IFNULL(cmp.des_segmentacion_growth,' ') AS C003_des_segmentacion_growth,
+    IFNULL(s.ind_per_propension_flexividcon,' ') AS C003_val_propension_flexividcon,
+    IF(cmp.tip_documento<>'RUC',cmp.ext_ind_dependiente_laboral,'')  as C002_ind_dependiente_laboral
+FROM cmp
+LEFT JOIN scoring_ia s 
+  ON cmp.id_persona = s.id_persona
+WHERE cmp.tip_documento in ('DNI', 'PA', 'CE','RUC')

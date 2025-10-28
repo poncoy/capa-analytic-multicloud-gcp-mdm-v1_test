@@ -1,0 +1,40 @@
+{	
+	"general": {
+		"name": "ue4-nonprod-com-gcf-rapi-general",
+		"location":"us-east4",
+		"description": "Funcion general para el llamado de las tablas en Bigtable",
+		"entry_point": "handler",
+		"runtime": "python39",
+		"use_cases":[
+			{"cu":"C001_block_leads"	},
+			{"cu":"C002_hyper_leads"	},
+			{"cu":"C003_salesforce_rt"	},
+			{"cu":"C004_salesforce_rcc"	},
+			{"cu":"C008_resultado_tecnico_contratante"	}
+		],
+		"environment_variables": {
+			"BUCKET_BASE": "",
+			"DATASET_ID": "",
+			"FILE_NAME_CONSOLIDADO": "",
+			"PROJECT_ID_RAW": "",
+			"RUTA_FOLDER_BASE": ""
+		},
+		"max_instances": 100,
+		"min_instances": 1,
+		"available_memory_mb": "256M",
+		"timeout": 540,
+		"ingress_settings": "ALLOW_ALL",
+		"service_account_email": "sa-nonprod-dlk-dt-rapi-inv@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",		
+		"build_environment_variables": null,
+		"trigger_http": null,
+		"vpc_connector": "",
+		"vpc_connector_egress_settings": "",		
+		"labels": {
+			"deployment-tool": "gcloud-build",
+			"dominio": "rimac",
+			"entorno": "nonprod",
+			"estado_operacion": "proyecto",
+			"responsable": "jimmy_larrain"
+		}
+	}
+}
