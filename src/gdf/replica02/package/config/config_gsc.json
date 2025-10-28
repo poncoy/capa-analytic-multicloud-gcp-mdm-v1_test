@@ -1,0 +1,26 @@
+{
+	"1":{
+		"name":"replica",
+		"description":"Programado para obtener en Landing los datos del MDM",
+		"schedule" : "10 0 * * *",
+		"region" : "us-east4",		
+		"sa_schedule" : "sa-nonprod-dtk-dt-rapi-ejec-c4@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+		"attempt_deadline":""
+	},
+	"2":{
+		"name":"C001_block_leads",
+		"description":"Programado para ejecutar el caso de uso 001 Bloqueo de leads",
+		"schedule" : "15 0 * * *",
+		"region" : "us-east4",		
+		"sa_schedule" : "sa-nonprod-dtk-dt-rapi-ejec-c1@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+		"attempt_deadline":""
+	},
+	"3":{
+		"name":"C002_hyper_leads",
+		"description":"Programado para ejecutar el caso de uso 002 enriquecimiento de Leads",
+		"schedule" : "15 0 * * *",
+		"region" : "us-east4",		
+		"sa_schedule" : "sa-nonprod-dtk-dt-rapi-ejec-c2@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+		"attempt_deadline":""
+	}
+}

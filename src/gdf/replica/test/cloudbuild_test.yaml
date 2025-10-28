@@ -1,0 +1,64 @@
+steps:
+  - id: 'branch name'
+    name: 'alpine'
+    entrypoint: 'sh'  
+    args: 
+    - '-c'
+    - | 
+        echo "***********************"
+        echo "$BRANCH_NAME"
+        echo "***********************"
+
+################################ Install dependencies ################################
+  - id: Install dependencies
+    name: python:3.7
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        cd ${_PATH_GDF} && \
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt --user
+
+################################ Package: Build ################################
+  - id: Run Pipeline
+    name: python:3.7
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        cp config/${BRANCH_NAME}/* ${_PATH_GDF}/package/config/
+        cd ${_PATH_GDF} && \
+        python -m main \
+            --service_account_email ${_SA_EMAIL} \
+            --runner DirectRunner \
+            --project ${PROJECT_ID} \
+            --region ${_REGION}  \
+            --use_public_ips False \
+            --temp_location ${_TMP_LOCATION} \
+            --template_location ${_TEMPLATE_LOCATION} \
+            --network ${_NETWORK} \
+            --subnetwork ${_SUBNETWORK} \
+            --setup_file ./setup.py \
+            --machine_type e2-standard-4 \
+            --use_case ${_USE_CASE} \
+            --max_num_workers 10
+
+
+substitutions:
+  _PATH_GDF: 'src/gdf/replica/'
+  _USE_CASE: 'replica'
+  _ARTIFACTS_BUCKET_NAME: 'ue4-nonprod-stg-gcs-rapi-artifacts'
+  _REGION: 'us-east4'
+  _SA_EMAIL: 'sa-nonprod-dtk-dt-rapi-ejec-c1@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com'
+  _STG_LOCATION: 'gs://ue4-nonprod-stg-gcs-rapi-artifacts/dataflow/staging'
+  _TMP_LOCATION: 'gs://ue4-nonprod-stg-gcs-rapi-artifacts/dataflow/tmp'
+  _TEMPLATE_LOCATION: 'gs://ue4-nonprod-stg-gcs-rapi-artifacts/dataflow/templates'
+  _SETUP_FILE: '/dataflow/template/setup.py'
+  _NETWORK: 'projects/rs-prd-orgnet-host-net-83ba/global/networks/ue4-orgnet-prd-net-dev-vpc-001'
+  _SUBNETWORK: 'https://www.googleapis.com/compute/v1/projects/rs-prd-orgnet-host-net-83ba/regions/us-east4/subnetworks/ue4-orgnet-prd-net-dev-sbn-001'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+tags: ['cloud-builders-community']

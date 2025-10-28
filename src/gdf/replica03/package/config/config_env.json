@@ -1,0 +1,13 @@
+{
+    "location_default":"US",
+    "prefijo_name":"ue4",
+    "prefijo_entorno":"nonprod-rapi",
+    "project":"rs-nprd-dlk-dt-rapi-cd22"    ,
+    "sa_despliegue": "",
+    "sa_invoca": "",
+    "artifacts_bucket" : "ue4-nonprod-stg-gcs-rapi-artifacts",
+    "region":"us-east4",
+    "zone":"us-east4-c",        
+    "network":"",
+    "subnetwork":""
+}
