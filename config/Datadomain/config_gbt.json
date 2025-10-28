@@ -1,0 +1,480 @@
+{
+	"uni": [
+		{
+			"table_name": "bloqueo_compra_previa",
+			"familyId": "C000_id_bloqueo_compra_previa",
+			"column_family": [
+				{
+					"name": "cross_columns",
+					"columns": [
+						{
+							"qualifierString": "C000_id_bloqueo_compra_previa",
+							"type": "STRING"
+						}
+					]
+				},
+				{
+					"name": "C001_block_leads",
+					"columns": [
+						{
+							"qualifierString": "C001_tip_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_num_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_cod_producto_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_des_agrupacion_n1",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_des_agrupacion_n2",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_des_agrupacion_n3",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_num_placa",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_pol_des_subcanal",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_periodo",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "persona",
+			"familyId": "C000_row_key",
+			"column_family": [
+				{
+					"name": "cross_columns",
+					"columns": [
+						{
+							"qualifierString": "C000_id_persona",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C000_tip_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C000_num_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C000_periodo",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C000_cod_claveunicocliente",
+							"type": "STRING"
+						}
+					]
+				},
+				{
+					"name": "C002_hyper_leads",
+				"columns": [
+					{
+						"qualifierString": "C002_nom_persona",
+						"type": "STRING"
+					},
+					{
+						"qualifierString": "C002_ape_paternopersona",
+						"type": "STRING"
+					},
+					{
+						"qualifierString": "C002_ape_maternopersona",
+						"type": "STRING"
+					},
+					{
+						"qualifierString": "C002_fec_nacimiento",
+						"type": "STRING"
+					},
+					{
+						"qualifierString": "C002_cod_nivel_socio_economico",
+						"type": "STRING"
+					},
+					{
+						"qualifierString": "C002_cod_nivel_socio_economico_agrupado",
+						"type": "STRING"
+					},
+					{
+						"qualifierString": "C002_nom_departamento",
+						"type": "STRING"
+					},
+					{
+						"qualifierString": "C002_nom_provincia",
+						"type": "STRING"
+					},
+					{
+						"qualifierString": "C002_nom_distrito",
+						"type": "STRING"
+					},
+					{
+						"qualifierString": "C002_num_edad",
+						"type": "STRING"
+					},
+					{
+						"qualifierString": "C002_ind_dependiente_laboral",
+						"type": "STRING"
+					},
+					{
+						"qualifierString": "C002_ind_cliente",
+						"type": "STRING"
+					},
+					{
+						"qualifierString": "C002_ind_tiene_tarjeta_credito",
+						"type": "STRING"
+					}
+				]
+			},
+			{
+				"name": "C003_hyper_crm",
+				"columns": [										
+				{
+					"qualifierString": "C003_cod_nivel_socio_economico",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_cod_nivel_socio_economico_agrupado",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_ind_blacklist",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_ind_ley_datos_personales",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_ind_consentimiento_comercial",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_des_empresa_laboral",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_val_propension_vehicular",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_val_propension_ami",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_val_persistenciavn_vidaahorro_4_colores",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_val_persistenciavn_vehicular",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_val_persistenciavn_ami",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_val_score_venta_ami",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_val_score_venta_vehicular",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_val_persistenciavn_vida_sepelio",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_num_ruc_empresa_laboral",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_des_segmentacion_growth",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_val_propension_flexividcon",
+					"type": "STRING"
+				},
+				{
+					"qualifierString": "C003_ind_dependiente_laboral",
+					"type": "STRING"
+				}
+			]
+		},
+				{
+					"name": "C004_cliente_eb",
+					"columns": [
+						{
+							"qualifierString": "C004_nom_persona",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_ape_paternopersona",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_ape_maternopersona",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_fec_nacimiento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_nom_departamento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_nom_provincia",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_nom_distrito",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_num_edad",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_ind_cliente",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_des_segmentacion_growth",
+							"type": "STRING"
+						}
+					]
+				}
+		]
+		},
+		{
+			"table_name": "producto_cliente",
+			"familyId": "C005_row_key",
+			"column_family": [
+				{
+					"name": "cross_columns",
+					"columns": [
+						{
+							"qualifierString": "C005_tip_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_num_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_id_poliza",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_cod_producto_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_pol_num_poliza",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_cer_id_certificado",
+							"type": "STRING"
+						}
+					]
+				},
+				{
+					"name": "C005_productos_eb",
+					"columns": [
+						{
+							"qualifierString": "C005_cod_clave_unico_cliente_contratante",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_nom_contratante",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_des_agrupacion_n1",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_des_agrupacion_n2",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_des_agrupacion_n3",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_id_producto",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_des_producto",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_pol_num_poliza",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_cer_id_certificado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_id_estado_poliza_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_fec_inicio_vigencia_poliza",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_fec_fin_vigencia_poliza",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_fec_anulacion_poliza",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_id_estado_origen_certificado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_fec_inicio_vigencia_certificado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_fec_fin_vigencia_certificado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_fec_anulacion_certificado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_periodo",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "siniestro_proveedor_salud",
+			"familyId": "C006_row_key",
+			"column_family": [				
+				{
+					"name": "C006_siniestros_ps",
+					"columns": [
+						{
+							"qualifierString": "C006_fec_notificacion",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_num_documento_proveedor",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_id_estado_siniestro_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_des_estado_siniestro_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_des_grupo_siniestro",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_ind_registrado_trama",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_mnt_documento_registrado_sol",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_des_origen_factura",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_cnt_siniestro",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_des_grupo_motivo_devolucion",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_periodo",
+							"type": "STRING"
+},
+						{
+							"qualifierString": "C006_cod_sede_proveedor_siniestro",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "siniestro_lote_salud",
+			"familyId": "C007_row_key",
+			"column_family": [				
+				{
+					"name": "C007_lote_factura_ps",
+					"columns": [
+						{
+							"qualifierString": "C007_fec_envio_siniestro_lote",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C007_num_documento_proveedor_lote",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C007_cod_estado_siniestro_lote",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C007_des_cod_estado_comprobante_pago_lote",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C007_cnt_documento_siniestro_lote",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C007_periodo",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C007_cod_sede_proveedor_siniestro",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		}
+	]
+}

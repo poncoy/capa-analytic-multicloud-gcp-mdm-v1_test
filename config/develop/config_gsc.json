@@ -1,0 +1,110 @@
+{
+	"1": {
+		"name": "replica",
+		"description": "Programado para obtener en Landing los datos del MDM",
+		"schedule": "00 11 * * *",
+		"attempt_deadline": ""
+	},
+	"2": {
+		"name": "C001_block_leads",
+		"description": "Programado para ejecutar el caso de uso 001 Bloqueo de leads",
+		"schedule": "00 11 * * *",
+		"attempt_deadline": ""
+	},
+	"3": {
+		"name": "C002_hyper_leads",
+		"description": "Programado para ejecutar el caso de uso 002 enriquecimiento de Leads",
+		"schedule": "00 5 * * *",
+		"attempt_deadline": ""
+	},
+	"4": {
+		"name": "replica02",
+		"description": "Programado para ejecutar las replicas full",
+		"schedule": "00 4 * * *",
+		"attempt_deadline": ""
+	},
+	"5": {
+		"name": "C003_hyper_crm",
+		"description": "Programado para ejecutar el caso de uso 003 enriquecimiento de crm, considerar que se ejecuta antes el C002",
+		"schedule": "00 5 * * *",
+		"attempt_deadline": ""
+	},
+	"6": {
+		"name": "C004_cliente_eb",
+		"description": "Programado para ejecutar el caso de uso 004 enriquecimiento de estar bien",
+		"schedule": "00 6 * * *",
+		"attempt_deadline": ""
+	},
+	"7": {
+		"name": "C005_productos_eb",
+		"description": "Programado para ejecutar el caso de uso 005 enriquecimiento de estar bien",
+		"schedule": "00 7 * * *",
+		"attempt_deadline": ""
+	},	
+	"9": {
+		"name": "C006_siniestros_ps",
+		"description": "Programado para ejecutar el caso de uso 006 enriquecimiento de siniestro salud",
+		"schedule": "00 6 * * *",
+		"attempt_deadline": ""
+	},
+	"10": {
+		"name": "C007_lote_factura_ps",
+		"description": "Programado para ejecutar el caso de uso 007 enriquecimiento de siniestro salud",
+		"schedule": "00 6 * * *",
+		"attempt_deadline": ""
+	},
+	"11": {
+		"name": "C008_resultado_tecnico_contratante",
+		"description": "Programado para ejecutar el caso de uso 008 resultado tecnico contratante",
+		"schedule": "00 6 * * *",
+		"attempt_deadline": ""
+	},	
+	"13": {
+		"name": "C009_gestion_tareas",
+		"description": "Programado para ejecutar el caso de uso 009 enriquecimiento de siniestro salud",
+		"schedule": "30 6 * * *",
+		"attempt_deadline": ""
+	},
+	"14": {
+		"name": "C010_leads_eps",
+		"description": "Programado para ejecutar el caso de uso 010 enriquecimiento de empresa",
+		"schedule": "30 6 * * *",
+		"attempt_deadline": ""
+	},
+	"15": {
+		"name": "siniestro_diagnostico_salud",
+		"description": "Programado para ejecutar el caso de uso 011 enriquecimiento de siniestro salud",
+		"schedule": "00 17,21 * * *",
+		"attempt_deadline": ""
+	},
+	"16": {
+		"name": "siniestro_grupo_diagnostico_salud",
+		"description": "Programado para ejecutar el caso de uso 012 enriquecimiento de siniestro salud",
+		"schedule": "00 17,21 * * *",
+		"attempt_deadline": ""
+	},
+	"17": {
+		"name": "siniestro_procedimiento_salud",
+		"description": "Programado para ejecutar el caso de uso 013 enriquecimiento de siniestro salud",
+		"schedule": "00 17,21 * * *",
+		"attempt_deadline": ""
+	},
+	"18": {
+		"name": "siniestro_carta_garantia_salud",
+		"description": "Programado para ejecutar el caso de uso 014 enriquecimiento de siniestro salud",
+		"schedule": "00 19,23 * * *",
+		"attempt_deadline": ""
+	},
+	"19": {
+		"name": "siniestro_detalle_salud",
+		"description": "Programado para ejecutar el caso de uso 015 enriquecimiento de siniestro salud",
+		"schedule": "00 19,23 * * *",
+		"attempt_deadline": ""
+	},
+	"20": {
+		"name": "preexistencia",
+		"description": "Programado para ejecutar el caso de uso 016 preexistencia",
+		"schedule": "00 17,21 * * *",
+		"attempt_deadline": ""
+	}
+}

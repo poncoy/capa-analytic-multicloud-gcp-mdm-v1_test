@@ -1,0 +1,1135 @@
+{
+	"uni": [
+		{
+			"table_name": "bloqueo_compra_previa",
+			"familyId": "C000_id_bloqueo_compra_previa",
+			"column_family": [
+				{
+					"name": "cross_columns",
+					"columns": [
+						{
+							"qualifierString": "C000_id_bloqueo_compra_previa",
+							"type": "STRING"
+						}
+					]
+				},
+				{
+					"name": "C001_block_leads",
+					"columns": [
+						{
+							"qualifierString": "C001_tip_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_num_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_cod_producto_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_des_agrupacion_n1",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_des_agrupacion_n2",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_des_agrupacion_n3",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C001_periodo",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "persona",
+			"familyId": "C000_row_key",
+			"column_family": [
+				{
+					"name": "cross_columns",
+					"columns": [
+						{
+							"qualifierString": "C000_id_persona",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C000_tip_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C000_num_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C000_periodo",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C000_cod_claveunicocliente",
+							"type": "STRING"
+						}
+					]
+				},
+				{
+					"name": "C002_hyper_leads",
+					"columns": [
+						{
+							"qualifierString": "C002_nom_persona",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ape_paternopersona",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ape_maternopersona",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_fec_nacimiento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_cod_nivel_socio_economico",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_cod_nivel_socio_economico_agrupado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_nom_departamento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_nom_provincia",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_nom_distrito",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_num_edad",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ind_menor_edad",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ind_dependiente_laboral",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ind_cliente",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ind_tiene_tarjeta_credito",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ind_fallecido",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ind_royal",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ind_cliente_nuevo",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ind_critico",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ind_trabaja_empresa_seguros",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ind_cliente_vip",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ind_empleado_rimac",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ind_trabajador_empresa_riesgo_desuscrito",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C002_ind_cliente_corredor_bloqueo_comercial",
+							"type": "STRING"
+						}
+					]
+				},
+				{
+					"name": "C003_hyper_crm",
+					"columns": [
+						{
+							"qualifierString": "C003_cod_nivel_socio_economico",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_cod_nivel_socio_economico_agrupado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_ind_blacklist",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_ind_ley_datos_personales",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_ind_consentimiento_comercial",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_des_empresa_laboral",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_val_propension_vehicular",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_val_propension_ami",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_val_persistenciavn_vidaahorro_4_colores",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_val_persistenciavn_vehicular",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_val_persistenciavn_ami",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_val_score_venta_ami",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_val_score_venta_vehicular",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_val_persistenciavn_vida_sepelio",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_num_ruc_empresa_laboral",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_des_segmentacion_growth",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C003_val_propension_flexividcon",
+							"type": "STRING"
+						}
+					]
+				},
+				{
+					"name": "C004_cliente_eb",
+					"columns": [
+						{
+							"qualifierString": "C004_nom_persona",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_ape_paternopersona",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_ape_maternopersona",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_fec_nacimiento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_nom_departamento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_nom_provincia",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_nom_distrito",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_num_edad",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_ind_cliente",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C004_des_segmentacion_growth",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "producto_cliente",
+			"familyId": "C005_row_key",
+			"column_family": [
+				{
+					"name": "cross_columns",
+					"columns": [
+						{
+							"qualifierString": "C005_tip_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_num_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_id_poliza",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_cod_producto_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_pol_num_poliza",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_cer_id_certificado",
+							"type": "STRING"
+						}
+					]
+				},
+				{
+					"name": "C005_productos_eb",
+					"columns": [
+						{
+							"qualifierString": "C005_cod_clave_unico_cliente_contratante",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_nom_contratante",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_des_agrupacion_n1",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_des_agrupacion_n2",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_des_agrupacion_n3",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_id_producto",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_des_producto",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_pol_num_poliza",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_cer_id_certificado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_fec_inicio_vigencia_certificado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_fec_fin_vigencia_certificado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C005_periodo",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "siniestro_proveedor_salud",
+			"familyId": "C006_row_key",
+			"column_family": [
+				{
+					"name": "C006_siniestros_ps",
+					"columns": [
+						{
+							"qualifierString": "C006_fec_notificacion",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_fec_devolucion",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_num_documento_proveedor",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_id_estado_siniestro_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_des_estado_siniestro_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_des_grupo_siniestro",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_ind_registrado_trama",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_mnt_documento_registrado_sol",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_des_origen_factura",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_cnt_siniestro",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_des_grupo_motivo_devolucion",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_periodo",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C006_cod_sede_proveedor_siniestro",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "siniestro_lote_salud",
+			"familyId": "C007_row_key",
+			"column_family": [
+				{
+					"name": "C007_lote_factura_ps",
+					"columns": [
+						{
+							"qualifierString": "C007_fec_envio_siniestro_lote",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C007_num_documento_proveedor_lote",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C007_cod_estado_siniestro_lote",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C007_des_cod_estado_comprobante_pago_lote",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C007_cnt_documento_siniestro_lote",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C007_periodo",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C007_cod_sede_proveedor_siniestro",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "resultado_tecnico_contratante",
+			"familyId": "C008_row_key",
+			"column_family": [
+				{
+					"name": "C008_resultado_tecnico_contratante",
+					"columns": [
+						{
+							"qualifierString": "C008_id_persona",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C008_des_riesgo",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C008_val_anho",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C008_mnt_prima_total_usd",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C008_mnt_prima_retenida_usd",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C008_mnt_siniestros_total_usd",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C008_mnt_siniestros_retenidos_usd",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C008_mnt_resultado_tecnico_total_usd",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C008_fec_ultima_procesamiento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C008_por_resultado_tecnico",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C008_por_siniestralidad",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C008_por_siniestralidad_retenida",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C008_fec_procesamiento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C008_periodo",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "siniestro_gestion_tareas",
+			"familyId": "C009_row_key",
+			"column_family": [
+				{
+					"name": "C009_gestion_tareas",
+					"columns": [
+						{
+							"qualifierString": "C009_fec_inicio_actividad",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_fec_fin_actividad",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_des_actividad_siniestro",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_des_tipo_proceso_auditoria",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_val_proceso_auditoria_admin",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_cod_proveedor",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_cod_sede_proveedor",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_des_correo_corporativo",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_periodo",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_des_detalle_tarea",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_mnt_detalle_tarea",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_cnt_detalle_tarea",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_des_asignacion_tarea",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_cnt_asignacion_tarea",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_des_vencimiento_tarea",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_cnt_vencimiento_tarea",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_nom_completo_proveedor_siniestro",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_cnt_tareas_proveedor",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_des_tipo_liquidacion",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_cnt_liquidacion",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_des_tipo_devolucion",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C009_cnt_devolucion",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "empresa",
+			"familyId": "C010_row_key",
+			"column_family": [
+				{
+					"name": "C010_leads_eps",
+					"columns": [
+						{
+							"qualifierString": "C010_id_empresa",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C010_tip_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C010_num_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C010_cod_claveunicocliente",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C010_des_razon_social",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C010_nom_comercial",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C010_fec_constitucion",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C010_nom_departamento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C010_nom_provincia",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C010_nom_distrito",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C010_nom_segmento_empresa",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "C010_periodo",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "siniestro_diagnostico_salud",
+			"familyId": "row_key",
+			"column_family": [
+				{
+					"name": "siniestro_diagnostico_salud",
+					"columns": [
+						{
+							"qualifierString": "tip_documento_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_documento_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "id_persona_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_anho_ocurrencia",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_diagnostico_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_diagnostico_salud",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "mnt_gasto_cubierto_sol",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "ctd_siniestro",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "tip_procedencia",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "nom_completo_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "periodo",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "siniestro_grupo_diagnostico_salud",
+			"familyId": "row_key",
+			"column_family": [
+				{
+					"name": "siniestro_grupo_diagnostico_salud",
+					"columns": [
+						{
+							"qualifierString": "tip_documento_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_documento_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "id_persona_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "cod_diagnostico_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_grupo_diagnostico",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "mnt_gasto_cubierto_sol",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "ctd_siniestro",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "tip_procedencia",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "nom_completo_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "periodo",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "siniestro_procedimiento_salud",
+			"familyId": "row_key",
+			"column_family": [
+				{
+					"name": "siniestro_procedimiento_salud",
+					"columns": [
+						{
+							"qualifierString": "tip_documento_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_documento_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "id_persona_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_procedimiento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "ctd_siniestro",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "mnt_gasto_presentado_sol",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "tip_procedencia",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "nom_completo_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "periodo",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "siniestro_carta_garantia_salud",
+			"familyId": "row_key",
+			"column_family": [
+				{
+					"name": "siniestro_carta_garantia_salud",
+					"columns": [
+						{
+							"qualifierString": "tip_documento_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_documento_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "id_persona_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_diagnostico_salud",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_diagnostico_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "fec_solicitud",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_producto",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "agrupacion_cobertura",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "mnt_solicitado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "mnt_autorizado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "por_cobertura_carta",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_procedimiento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "nom_medico",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_colegio_medico",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_razon_social_proveedor",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_siniestro",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "cod_proceso_bpm",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_carta_garantia",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_est_carta_garantia_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "fec_ult_liquidacion",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "periodo",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "siniestro_detalle_salud",
+			"familyId": "row_key",
+			"column_family": [
+				{
+					"name": "siniestro_detalle_salud",
+					"columns": [
+						{
+							"qualifierString": "tip_documento_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_documento_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "id_persona_afiliado",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_anhio_ocurrencia",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_siniestro",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "cod_proceso_bpm",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_diagnostico_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_diagnostico_salud",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_procedimiento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_producto",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "ctd_siniestro",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "mnt_deducible_tec_sol",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "mnt_coaseguro_tec_sol",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "mnt_beneficio_tec_sol",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "fec_inicio_tratamiento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "fec_ult_liquidacion",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_colegio_medico",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "nom_medico",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_tipo_reclamo",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_tipo_contrato",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_cobertura",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "mnt_gasto_cubierto_tec_sol",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "razon_social_proveedor",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_poliza",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "periodo",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		},
+		{
+			"table_name": "preexistencia",
+			"familyId": "row_key",
+			"column_family": [
+				{
+					"name": "preexistencia",
+					"columns": [
+						{
+							"qualifierString": "tip_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_documento",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "id_persona",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "cod_preexistencia_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "des_preexistencia",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "fec_inicio_vigencia_preexistencia",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_tramite_preexistencia_inclusion",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "nom_producto",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "est_preexistencia_origen",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "num_tramite_preexistencia_exclusion",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "fec_fin_vigencia_preexistencia",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "ind_fraude",
+							"type": "STRING"
+						},
+						{
+							"qualifierString": "periodo",
+							"type": "STRING"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,141 @@
+{
+    "C001_block_leads": [
+        {
+            "exec_type": "merge",
+            "project_id": "env_prj",
+            "bq_dataset": "pre_persona",
+            "bq_table": "bloqueo_compra_previa",
+            "bt_instance": "ue4-env_name-rapi-gbt-uni",
+            "bt_prefix": "uni",
+            "bt_table": "bloqueo_compra_previa",
+            "bt_column_family": ["cross_columns","C001_block_leads"]
+        }
+    ],
+    "C002_hyper_leads": [
+        {
+            "exec_type": "merge",
+            "project_id": "env_prj",
+            "bq_dataset": "pre_persona",
+            "bq_table": "persona",
+            "bt_instance": "ue4-env_name-rapi-gbt-uni",
+            "bt_prefix": "uni",
+            "bt_table": "persona",
+            "bt_column_family": ["cross_columns","C002_hyper_leads"]
+        }
+    ],
+    "replica": [
+        {
+            "exec_type":"merge",
+            "source_table":"rs-shr-al-analyticsz-prj-ebc1:anl_persona.cliente_persona_detalle",
+            "target_table":"env_prj:lan_mdm_ingesta.PER__cliente_persona_detalle",            
+            "lis_fields":"id_producto,des_agrupacion_n1,des_agrupacion_n2,des_agrupacion_n3",
+            "id_field":"id_cliente_persona,cer_id_certificado,des_agrupacion_n2,periodo"
+        },
+        {
+            "exec_type":"merge",
+            "source_table":"rs-shr-al-analyticsz-prj-ebc1:anl_persona.cliente_persona",
+            "target_table":"env_prj:lan_mdm_ingesta.PER__cliente_persona",            
+            "lis_fields":"tip_documento,num_documento,ext_des_calificacion_rcc,periodo,cuc,nombres,ape_paterno,ape_materno,fec_nacimiento,nse_rimac,nse_agrup,num_edad,ext_ind_dependiente_laboral,ext_ind_tiene_tarjeta_credito,periodo",
+            "id_field":"id_cliente_persona"
+        },
+        {
+            "exec_type":"merge",
+            "source_table":"rs-shr-al-analyticsz-prj-ebc1:anl_persona.prospecto_persona",
+            "target_table":"env_prj:lan_mdm_ingesta.PER__prospecto_persona",
+            "lis_fields":"tip_documento,num_documento,ext_des_calificacion_rcc,periodo,cuc,nombres,ape_paterno,ape_materno,fec_nacimiento,nse_rimac,nse_agrup,num_edad,ext_ind_dependiente_laboral,ext_ind_tiene_tarjeta_credito,periodo",
+            "id_field":"id_prospecto_persona"
+        }
+    ],
+    "replica02": [
+        {
+            "exec_type":"full",
+            "source_table":"rs-shr-al-analyticsz-prj-ebc1:anl_persona.persona_scoring_ia",
+            "target_table":"env_prj:lan_mdm_ingesta.PER__persona_scoring_ia",
+            "lis_fields":"ind_propension_vehicular,ind_propension_ami,ind_persistenciavn_vidaahorro_4_colores,ind_persistenciavn_vehicular,ind_persistenciavn_ami,ind_score_venta_ami,ind_score_venta_vehicular",
+            "id_field":"id_persona,cod_acselx,periodo"
+        },
+        {
+            "exec_type":"full",
+            "source_table":"rs-shr-al-analyticsz-prj-ebc1:anl_contactabilidad.datos_contacto",
+            "target_table":"env_prj:lan_mdm_ingesta.CON__datos_contacto",
+            "lis_fields":"departamento_gestion_servicio,provincia_gestion_servicio,distrito_gestion_servicio",
+            "id_field":"id_persona"
+        }
+    ],
+    "C003_hyper_crm": [
+		{
+			"exec_type": "merge",
+			"project_id": "env_prj",
+			"bq_dataset": "pre_persona",
+			"bq_table": "persona",
+			"bt_instance": "ue4-env_name-rapi-gbt-uni",
+			"bt_prefix": "uni",
+			"bt_table": "persona",
+			"bt_column_family": ["cross_columns","C003_hyper_crm"]
+		}
+	],
+	"C004_cliente_eb": [
+		{
+			"exec_type": "merge",
+			"project_id": "env_prj",
+			"bq_dataset": "pre_persona",
+			"bq_table": "persona",
+			"bt_instance": "ue4-env_name-rapi-gbt-uni",
+			"bt_prefix": "uni",
+			"bt_table": "persona",
+			"bt_column_family": ["cross_columns","C004_cliente_eb"]
+		}
+	],
+	"C005_productos_eb": [
+		{
+			"exec_type": "merge",
+			"project_id": "env_prj",
+			"bq_dataset": "pre_persona",
+			"bq_table": "producto_cliente",
+			"bt_instance": "ue4-env_name-rapi-gbt-uni",
+			"bt_prefix": "uni",
+			"bt_table": "producto_cliente",
+			"bt_column_family": ["cross_columns","C005_productos_eb"]
+		}
+    ],
+	"replica03": [
+		{
+            "exec_type":"full",
+            "source_table":"rs-shr-al-analyticsz-prj-ebc1:anl_siniestro.siniestro_detalle_salud",
+            "target_table":"env_prj:lan_mdm_ingesta.SIN__siniestro_detalle_salud",
+            "lis_fields":"num_siniestro,fec_notificacion,id_estado_siniestro_origen,des_estado_siniestro_origen,num_documento_proveedor_siniestro,atencion_salud,num_documento_contratante,mto_auditado_sol,ind_tedef_salud,des_producto,grupo_devolucion,periodo,fec_hora_ocurrencia,tip_reclamo",
+            "id_field":"id_siniestro"
+        },
+		{
+            "exec_type":"full",
+            "source_table":"rs-shr-al-analyticsz-prj-ebc1:anl_siniestro.siniestro_lote",
+            "target_table":"env_prj:lan_mdm_ingesta.SIN__siniestro_lote",
+            "lis_fields":"fec_envio_siniestro_lote,hor_envio_siniestro_lote,cod_siniestro_lote,id_persona_proveedor,tip_documento_proveedor_lote,num_documento_proveedor_lote,razon_social_proveedor_lote,nom_comercial_proveedor_lote,cod_estado_siniestro_lote,id_comprobante_recibido,id_origen,mnt_comprobante,periodo",
+            "id_field":"id_siniestro_lote"
+        }
+	],
+	"C006_siniestros_ps": [
+		{
+			"exec_type": "full",
+			"project_id": "env_prj",
+			"bq_dataset": "pre_siniestro",
+			"bq_table": "siniestro_proveedor_salud",
+			"bt_instance": "ue4-env_name-rapi-gbt-uni",
+			"bt_prefix": "uni",
+			"bt_table": "siniestro_proveedor_salud",
+			"bt_column_family": ["C006_siniestros_ps"]
+		}
+],
+	"C007_lote_factura_ps": [
+		{
+			"exec_type": "full",
+			"project_id": "env_prj",
+			"bq_dataset": "pre_siniestro",
+			"bq_table": "siniestro_lote_salud",
+			"bt_instance": "ue4-env_name-rapi-gbt-uni",
+			"bt_prefix": "uni",
+			"bt_table": "siniestro_lote_salud",
+			"bt_column_family": ["C007_lote_factura_ps"]
+		}
+	]
+}

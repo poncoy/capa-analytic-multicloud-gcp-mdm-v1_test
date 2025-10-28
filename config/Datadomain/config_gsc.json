@@ -1,0 +1,62 @@
+{
+	"1": {
+		"name": "replica",
+		"description": "Programado para obtener en Landing los datos del MDM",
+		"schedule": "0 16 * * *",
+		"attempt_deadline": ""
+	},
+	"2": {
+		"name": "C001_block_leads",
+		"description": "Programado para ejecutar el caso de uso 001 Bloqueo de leads",
+		"schedule": "0 17 * * *",
+		"attempt_deadline": ""
+	},
+	"3": {
+		"name": "C002_hyper_leads",
+		"description": "Programado para ejecutar el caso de uso 002 enriquecimiento de Leads",
+		"schedule": "0 17 * * *",
+		"attempt_deadline": ""
+	},
+	"4": {
+		"name": "replica02",
+		"description": "Programado para ejecutar las replicas full",
+		"schedule": "0 16 * * *",
+		"attempt_deadline": ""
+	},
+	"5": {
+		"name": "C003_hyper_crm",
+		"description": "Programado para ejecutar el caso de uso 003 enriquecimiento de crm, considerar que se ejecuta antes el C002",
+		"schedule": "00 18 * * *",
+		"attempt_deadline": ""
+	},
+	"6": {
+		"name": "C004_cliente_eb",
+		"description": "Programado para ejecutar el caso de uso 004 enriquecimiento de estar bien",
+		"schedule": "00 20 * * *",
+		"attempt_deadline": ""
+	},
+	"7": {
+		"name": "C005_productos_eb",
+		"description": "Programado para ejecutar el caso de uso 005 enriquecimiento de estar bien",
+		"schedule": "00 20 * * *",
+		"attempt_deadline": ""
+	},
+	"8": {
+		"name": "replica03",
+		"description": "Programado para ejecutar las replicas full",
+		"schedule": "00 20 * * *",
+		"attempt_deadline": ""
+	},
+	"9": {
+		"name": "C006_siniestros_ps",
+		"description": "Programado para ejecutar el caso de uso 006 enriquecimiento de siniestro salud",
+		"schedule": "00 22 * * *",
+		"attempt_deadline": ""
+	},
+	"10": {
+		"name": "C007_lote_factura_ps",
+		"description": "Programado para ejecutar el caso de uso 007 enriquecimiento de siniestro salud",
+		"schedule": "00 22 * * *",
+		"attempt_deadline": ""
+	}
+}

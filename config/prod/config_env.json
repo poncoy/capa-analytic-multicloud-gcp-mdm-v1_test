@@ -1,0 +1,33 @@
+{
+    "location_default":"US",
+    "prefijo_name":"ue4",
+    "prefijo_entorno":"prd-rapi",
+    "prefijo_entorno_corto":"prd",
+    "branch_name":"prod",
+    "project":"rs-prd-dd-rapi-429a",
+    "cuenta_sa":{
+        "sa_despliegue": "sa-prd-dd-rapi-des@rs-prd-dd-rapi-429a.iam.gserviceaccount.com",
+        "sa_invoca": "sa-prd-dd-rapi-inv@rs-prd-dd-rapi-429a.iam.gserviceaccount.com",
+        "C001_block_leads": "sa-prd-dd-rapi-ejec-c1@rs-prd-dd-rapi-429a.iam.gserviceaccount.com",
+        "C002_hyper_leads": "sa-prd-dd-rapi-ejec-c2@rs-prd-dd-rapi-429a.iam.gserviceaccount.com",
+        "C003_hyper_crm": "sa-prd-dd-rapi-ejec-c3@rs-prd-dd-rapi-429a.iam.gserviceaccount.com",
+        "C004_cliente_eb":  "sa-prd-dd-rapi-ejec-eb@rs-prd-dd-rapi-429a.iam.gserviceaccount.com",
+        "C005_productos_eb" :  "sa-prd-dd-rapi-ejec-eb@rs-prd-dd-rapi-429a.iam.gserviceaccount.com",
+        "C006_siniestros_ps" : "sa-prd-dd-rapi-ejec-meve@rs-prd-dd-rapi-429a.iam.gserviceaccount.com",
+        "C007_lote_factura_ps" : "sa-prd-dd-rapi-ejec-meve@rs-prd-dd-rapi-429a.iam.gserviceaccount.com",
+        "replica":"sa-prd-dd-rapi-gdfre@rs-prd-dd-rapi-429a.iam.gserviceaccount.com",
+        "replica02":"sa-prd-dd-rapi-gdfre@rs-prd-dd-rapi-429a.iam.gserviceaccount.com",
+        "replica03":"sa-prd-dd-rapi-ejec-meve@rs-prd-dd-rapi-429a.iam.gserviceaccount.com",
+        "sa_ejec_gcf":"sa-prd-dd-rapi-gcfv2@rs-prd-dd-rapi-429a.iam.gserviceaccount.com"
+    },    
+    "artifacts_bucket" : "ue4-env_name-stg-gcs-rapi-artifacts",    
+    "terraform_state":"ue4-env_name-stg-gcs-rapi-tfstate",    
+    "region":"us-east4",
+    "zone":"us-east4-c",        
+    "network":"projects/rs-prd-orgnet-host-net-83ba/global/networks/ue4-orgnet-prd-net-prd-vpc-001",
+    "subnetwork":"https://www.googleapis.com/compute/v1/projects/rs-prd-orgnet-host-net-83ba/regions/us-east4/subnetworks/ue4-orgnet-prd-net-prd-sbn-002",
+    "label_general":{
+        "responsable":"everest",
+        "motivo":"implementacion_caso_uso_007"        
+    }
+}

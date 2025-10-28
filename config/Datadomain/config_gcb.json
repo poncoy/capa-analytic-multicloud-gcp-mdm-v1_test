@@ -1,0 +1,92 @@
+{
+	"1":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-001",
+		"path_gdf":"src/gdf/ingest",
+		"sa_template":"sa_ejec_gcf"
+	},
+	"2":{
+		"name":"ue4-env_name-com-gcb-rapi-replica",		
+		"description":"Despliegue de cambios en template Dataflow para el caso de Replica",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_replica.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_replica",
+		"image_name":"ue4-com-gcr-rapi-replica-template-001",
+		"path_gdf":"src/gdf/replica",
+		"sa_template":"replica"
+	},
+	"3":{
+		"name":"ue4-env_name-com-gcb-rapi-terraform",		
+		"description":"Despliegue de cambios en la infraestructura de GCP",
+		"file_yaml":"deployments/terraform/cloudbuild_tf.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_terraform",
+		"image_name":null,
+		"path_gdf":null,
+		"sa_template":"sa_despliegue"
+	},
+	"4":{
+		"name":"ue4-env_name-com-gcb-rapi-replica02",		
+		"description":"Despliegue de cambios en template Dataflow para el caso de Replica grupo 02",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_replica.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_replica",
+		"image_name":"ue4-com-gcr-rapi-replica-template-002",
+		"path_gdf":"src/gdf/replica02",
+		"sa_template":"replica"
+	},
+	"5":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-crm",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-002",
+		"path_gdf":"src/gdf/ingest_crm",
+		"sa_template":"sa_ejec_gcf"
+	},
+	"6":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-ceb",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso Estar Bien",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-004",
+		"path_gdf":"src/gdf/ingest_eb",
+		"sa_template":"sa_ejec_gcf"
+	},
+	"7":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-ceb-c2",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso 2 Estar Bien",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-005",
+		"path_gdf":"src/gdf/ingest_eb",
+		"sa_template":"sa_ejec_gcf"
+	},
+	"9":{
+		"name":"ue4-env_name-com-gcb-rapi-replica03",		
+		"description":"Despliegue de cambios en template Dataflow para el caso de Replica grupo 03",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_replica.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_replica",
+		"image_name":"ue4-com-gcr-rapi-replica-template-003",
+		"path_gdf":"src/gdf/replica03",
+		"sa_template":"replica03"
+	},
+	"10":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-siniestro",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-006",
+		"path_gdf":"src/gdf/ingest_siniestro",
+		"sa_template":"C006_siniestros_ps"
+	},
+	"11":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-lote-siniestro",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-007",
+		"path_gdf":"src/gdf/ingest_siniestro",
+		"sa_template":"C007_lote_factura_ps"		
+	}
+}

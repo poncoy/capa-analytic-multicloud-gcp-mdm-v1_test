@@ -1,0 +1,33 @@
+{
+    "location_default":"US",
+    "prefijo_name":"ue4",
+    "prefijo_entorno":"dd-rapi",
+    "prefijo_entorno_corto":"dd",
+    "branch_name":"Datadomain",
+    "project":"rs-nprd-ndlk-dd-rapi-0d61",
+    "cuenta_sa":{
+        "sa_despliegue": "sa-nprd-ndlk-dd-rapi-des@rs-nprd-ndlk-dd-rapi-0d61.iam.gserviceaccount.com",
+        "sa_invoca": "sa-nprd-ndlk-dd-rapi-inv@rs-nprd-ndlk-dd-rapi-0d61.iam.gserviceaccount.com",
+        "C001_block_leads": "sa-nprd-ndlk-dd-rapi-ejec-c6@rs-nprd-ndlk-dd-rapi-0d61.iam.gserviceaccount.com",
+        "C002_hyper_leads": "sa-nprd-ndlk-dd-rapi-ejec-c7@rs-nprd-ndlk-dd-rapi-0d61.iam.gserviceaccount.com",
+        "C003_hyper_crm": "sa-nprd-ndlk-dd-rapi-ejec-c8@rs-nprd-ndlk-dd-rapi-0d61.iam.gserviceaccount.com",
+        "C004_cliente_eb":  "sa-nprd-dd-rapi-ejec-eb@rs-nprd-ndlk-dd-rapi-0d61.iam.gserviceaccount.com",
+        "C005_productos_eb" :  "sa-nprd-dd-rapi-ejec-eb@rs-nprd-ndlk-dd-rapi-0d61.iam.gserviceaccount.com",
+        "C006_siniestros_ps" : "sa-nprd-dd-rapi-ejec-meve@rs-nprd-ndlk-dd-rapi-0d61.iam.gserviceaccount.com",
+        "C007_lote_factura_ps" : "sa-nprd-dd-rapi-ejec-meve@rs-nprd-ndlk-dd-rapi-0d61.iam.gserviceaccount.com",
+        "replica":"sa-nprd-ndlk-dd-rapi-gdfre@rs-nprd-ndlk-dd-rapi-0d61.iam.gserviceaccount.com",
+        "replica02":"sa-nprd-ndlk-dd-rapi-gdfre@rs-nprd-ndlk-dd-rapi-0d61.iam.gserviceaccount.com",
+        "replica03":"sa-nprd-dd-rapi-ejec-meve@rs-nprd-ndlk-dd-rapi-0d61.iam.gserviceaccount.com",
+        "sa_ejec_gcf":"sa-nprd-ndlk-dd-rapi-gcfv2@rs-nprd-ndlk-dd-rapi-0d61.iam.gserviceaccount.com"
+    },    
+    "artifacts_bucket" : "ue4-env_name-stg-gcs-rapi-artifacts",    
+    "terraform_state":"ue4-env_name-stg-gcs-rapi-tfstate",    
+    "region":"us-east4",
+    "zone":"us-east4-c",        
+    "network":"projects/rs-prd-orgnet-host-net-83ba/global/networks/ue4-orgnet-prd-net-dev-vpc-001",
+    "subnetwork":"https://www.googleapis.com/compute/v1/projects/rs-prd-orgnet-host-net-83ba/regions/us-east4/subnetworks/ue4-orgnet-prd-net-dev-sbn-001",
+    "label_general":{
+        "responsable":"everest",
+        "motivo":"implementacion_caso_uso_007"        
+    }
+}

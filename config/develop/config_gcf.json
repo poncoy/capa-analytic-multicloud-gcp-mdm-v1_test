@@ -1,0 +1,51 @@
+{	
+	"general": {
+		"name": "ue4-com-gcf-rapi-general",
+		"bucket_stg_gcf": "ue4-env_name-stg-gcs-rapi-artifacts",
+		"description": "Funcion general para el llamado de las tablas en Bigtable",
+		"entry_point": "handler",
+		"runtime": "python39",
+		"use_cases":[
+			{"cu":"C001_block_leads"	},
+			{"cu":"C002_hyper_leads"	},
+			{"cu":"C003_hyper_crm"	},
+			{"cu":"C004_cliente_eb"	},
+			{"cu":"C005_productos_eb"	},
+			{"cu":"C006_siniestros_ps"	},
+			{"cu":"C007_lote_factura_ps"	},
+			{"cu":"C006_C007_monto_total_ps"	},
+			{"cu":"C008_resultado_tecnico_contratante"	},
+			{"cu":"C009_gestion_tareas"	},
+			{"cu":"C010_leads_eps"	},
+			{"cu":"siniestro_diagnostico_salud"	},
+			{"cu":"siniestro_grupo_diagnostico_salud"	},
+			{"cu":"siniestro_procedimiento_salud"	},
+			{"cu":"siniestro_carta_garantia_salud"	},
+			{"cu":"siniestro_detalle_salud"	},
+			{"cu":"preexistencia"	}
+		],
+		"environment_variables": {
+			"PROJECT_ID": "",
+			"RUTA_FOLDER_BASE": ""
+		},
+		"max_instances": 100,
+		"min_instances": 1,
+		"available_memory_mb": "1024M",
+		"timeout": 540,
+		"ingress_settings": "ALLOW_ALL",		
+		"build_environment_variables": {
+			"GBT_INSTANCE2": ""
+		},
+		"trigger_http": null,
+		"vpc_connector": "",
+		"vpc_connector_egress_settings": "",		
+		"labels": {
+			"deployment-tool": "gcloud-build",
+			"dominio": "rimac",
+			"entorno": "env_name",
+			"estado_operacion": "proyecto",
+			"responsable":"delivery_smt",
+        	"motivo":"implementacion_caso_uso_016"
+		}
+	}
+}

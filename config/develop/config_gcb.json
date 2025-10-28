@@ -1,0 +1,206 @@
+{
+	"1":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-001",
+		"path_gdf":"src/gdf/ingest",
+		"sa_template":"sa_ejec_gcf",
+		"custom_substitutions" : {}
+	},
+	"2":{
+		"name":"ue4-env_name-com-gcb-rapi-replica",		
+		"description":"Despliegue de cambios en template Dataflow para el caso de Replica",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_replica.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_replica",
+		"image_name":"ue4-com-gcr-rapi-replica-template-001",
+		"path_gdf":"src/gdf/replica",
+		"sa_template":"replica",
+		"custom_substitutions" : {}
+	},
+	"3":{
+		"name":"ue4-env_name-com-gcb-rapi-terraform",		
+		"description":"Despliegue de cambios en la infraestructura de GCP",
+		"file_yaml":"deployments/terraform/cloudbuild_tf.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_terraform",
+		"image_name":null,
+		"path_gdf":null,
+		"sa_template":"sa_despliegue",
+		"custom_substitutions" : {}
+	},
+	"4":{
+		"name":"ue4-env_name-com-gcb-rapi-replica02",		
+		"description":"Despliegue de cambios en template Dataflow para el caso de Replica grupo 02",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_replica.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_replica",
+		"image_name":"ue4-com-gcr-rapi-replica-template-002",
+		"path_gdf":"src/gdf/replica02",
+		"sa_template":"replica",
+		"custom_substitutions" : {}
+	},
+	"5":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-crm",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-002",
+		"path_gdf":"src/gdf/ingest_crm",
+		"sa_template":"sa_ejec_gcf",
+		"custom_substitutions" : {}
+	},
+	"6":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-ceb",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso Estar Bien",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-004",
+		"path_gdf":"src/gdf/ingest_eb",
+		"sa_template":"sa_ejec_gcf",
+		"custom_substitutions" : {}
+	},
+	"7":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-ceb-c2",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso 2 Estar Bien",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-005",
+		"path_gdf":"src/gdf/ingest_eb",
+		"sa_template":"sa_ejec_gcf",
+		"custom_substitutions" : {}
+	},
+	"8":{
+		"name":"ue4-env_name-com-gcb-rapi-bigtable",		
+		"description":"Despliegue de Bigtable",
+		"file_yaml":"deployments/gbt/cloudbuild_bgt_tf.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_bigtable",
+		"image_name":null,
+		"path_gdf":null,
+		"sa_template":"sa_despliegue",
+		"custom_substitutions" : {
+			"storage_type" : "gbt.instance_atribute.storage_type",
+			"num_nodes" : "gbt.instance_atribute.num_nodes",
+			"name" : "gbt.instance_atribute.name"
+		}
+	},
+	"9":{
+		"name":"ue4-env_name-com-gcb-rapi-replica03",		
+		"description":"Despliegue de cambios en template Dataflow para el caso de Replica grupo 03",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_replica.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_replica",
+		"image_name":"ue4-com-gcr-rapi-replica-template-003",
+		"path_gdf":"src/gdf/replica03",
+		"sa_template":"replica03",
+		"custom_substitutions" : {}
+	},
+	"10":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-siniestro",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-006",
+		"path_gdf":"src/gdf/ingest_siniestro",
+		"sa_template":"C006_siniestros_ps",
+		"custom_substitutions" : {}
+	},
+	"11":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-lote-siniestro",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-007",
+		"path_gdf":"src/gdf/ingest_siniestro",
+		"sa_template":"C007_lote_factura_ps",
+		"custom_substitutions" : {}
+	},
+	"12":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-resultado-tecnico",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-008",
+		"path_gdf":"src/gdf/ingest_crm",
+		"sa_template":"C008_resultado_tecnico_contratante",
+		"custom_substitutions" : {}
+	},
+	"13":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-gestion-tareas",		
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-009",
+		"path_gdf":"src/gdf/ingest_siniestro",
+		"sa_template":"C009_gestion_tareas",
+		"custom_substitutions" : {}
+	},
+	"14":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-leads-eps",
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-010",
+		"path_gdf":"src/gdf/ingest_empresa",
+		"sa_template":"C010_leads_eps",
+		"custom_substitutions" : {}
+	},
+	"15":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-siniestro-diagnostico",
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-011",
+		"path_gdf":"src/gdf/ingest_siniestro",
+		"sa_template":"siniestro_diagnostico_salud",
+		"custom_substitutions" : {}
+	},
+	"16":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-siniestro-grupo-diagnostico",
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-012",
+		"path_gdf":"src/gdf/ingest_siniestro",
+		"sa_template":"siniestro_grupo_diagnostico_salud",
+		"custom_substitutions" : {}
+	},
+	"17":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-siniestro-procedimiento",
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-013",
+		"path_gdf":"src/gdf/ingest_siniestro",
+		"sa_template":"siniestro_procedimiento_salud",
+		"custom_substitutions" : {}
+	},
+	"18":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-siniestro-carta-garantia",
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-014",
+		"path_gdf":"src/gdf/ingest_siniestro",
+		"sa_template":"siniestro_carta_garantia_salud",
+		"custom_substitutions" : {}
+	},
+	"19":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-siniestro-detalle-salud",
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-015",
+		"path_gdf":"src/gdf/ingest_siniestro",
+		"sa_template":"siniestro_detalle_salud",
+		"custom_substitutions" : {}
+	},
+	"20":{
+		"name":"ue4-env_name-com-gcb-rapi-ingesta-cu-preexistencia",
+		"description":"Despliegue de cambios en template Dataflow para Ingesta de Casos de Uso",
+		"file_yaml":"deployments/gdf/cloudbuild_gdf_ingesta_cu.yaml",
+		"pubsub_topic":"projects/env_prj/topics/ue4-env_name-rapi-gps_cu",
+		"image_name":"ue4-com-gcr-rapi-cu-template-016",
+		"path_gdf":"src/gdf/ingest_persona",
+		"sa_template":"preexistencia",
+		"custom_substitutions" : {}
+	}
+}

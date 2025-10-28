@@ -1,0 +1,43 @@
+{
+    "location_default":"US",
+    "prefijo_name":"ue4",
+    "prefijo_entorno":"nonprod-rapi",
+    "prefijo_entorno_corto":"nonprod",
+    "branch_name":"develop",
+    "project":"rs-nprd-dlk-dt-rapi-cd22"    ,
+    "cuenta_sa":{
+        "sa_despliegue": "sa-nonprod-dlk-dt-rapi-des-tes@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "sa_invoca": "sa-nonprod-dlk-dt-rapi-inv@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "C001_block_leads": "sa-noprd-dt-rapi-ejec-c1-test@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "C002_hyper_leads": "sa-noprd-dt-rapi-ejec-c1-test@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "C003_hyper_crm": "sa-noprd-dt-rapi-ejec-c1-test@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "C004_cliente_eb": "sa-nprd-dt-rapi-ejec-eb@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "C005_productos_eb" : "sa-nprd-dt-rapi-ejec-eb@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "C006_siniestros_ps" : "sa-nprd-dt-rapi-ejec-meve@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "C007_lote_factura_ps" : "sa-nprd-dt-rapi-ejec-meve@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "replica":"sa-noprd-dt-rapi-ejec-c1-test@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",        
+        "replica02":"sa-noprd-dt-rapi-ejec-c1-test@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "replica03":"sa-nprd-dt-rapi-ejec-meve@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "sa_ejec_gcf":"sa-noprd-dt-rapi-ejec-c1-test@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "C008_resultado_tecnico_contratante" : "sa-nprd-dt-rapi-ejec-msf@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "C009_gestion_tareas" : "sa-nprd-dt-rapi-ejec-meve@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "C010_leads_eps": "sa-noprd-dt-rapi-ejec-c1-test@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "siniestro_diagnostico_salud": "sa-nprd-dt-rapi-ejec-meve@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "siniestro_grupo_diagnostico_salud": "sa-nprd-dt-rapi-ejec-meve@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "siniestro_procedimiento_salud": "sa-nprd-dt-rapi-ejec-meve@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "siniestro_carta_garantia_salud": "sa-nprd-dt-rapi-ejec-meve@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "siniestro_detalle_salud": "sa-nprd-dt-rapi-ejec-meve@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com",
+        "preexistencia" : "sa-nprd-dt-rapi-ejec-meve@rs-nprd-dlk-dt-rapi-cd22.iam.gserviceaccount.com"
+    },
+    "artifacts_bucket" : "ue4-env_name-stg-gcs-rapi-artifacts",    
+    "temporal_bucket" : "ue4-env_name-stg-gcs-rapi-temporal",    
+    "terraform_state":"ue4-env_name-stg-gcs-rapi-tfstate",    
+    "region":"us-east4",
+    "zone":"us-east4-c",        
+    "network":"projects/rs-prd-orgnet-host-net-83ba/global/networks/ue4-orgnet-prd-net-dev-vpc-001",
+    "subnetwork":"https://www.googleapis.com/compute/v1/projects/rs-prd-orgnet-host-net-83ba/regions/us-east4/subnetworks/ue4-orgnet-prd-net-dev-sbn-001",
+    "label_general":{
+        "responsable":"delivery_smt",
+        "motivo":"implementacion_caso_uso_016"
+    }
+}
