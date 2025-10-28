@@ -1,0 +1,48 @@
+steps:
+  - id: 'branch name'
+    name: 'alpine'
+    entrypoint: 'sh'  
+    args: 
+    - '-c'
+    - | 
+        echo "***********************"
+        echo "$BRANCH_NAME"
+        echo "***********************"
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+    - pubsub
+    - topics
+    - publish
+    - ${_TOPIC}
+    - --message="deployservice"
+    - --attribute="origin=GCC"
+
+  # - name: gcr.io/cloud-builders/gsutil
+  #   args: ['cp','-r','.', 'gs://${_COMPOSER_BUCKET}/${_PATH_BIN_COM_SQL}/']
+  #   dir: $_FUNCION_COMPOSER_SQL
+  #   env:
+  #     - '_FUNCION_COMPOSER_SQL=bin/sql-scripts/raw_to_stg/'
+  #   id: 'COPY SQL SCRIPTS DAG COMPOSER'
+ 
+  - name: gcr.io/cloud-builders/gsutil
+    args: ['cp','-r','.', 'gs://${_COMPOSER_BUCKET}/${_PATH_BIN_COM}/']
+    dir: $_FUNCION_COMPOSER
+    env:
+      - '_FUNCION_COMPOSER=bin/dags/'
+    id: 'COPY DAG COMPOSER'
+
+substitutions:
+  _TOPIC: 'ue4-nonprod-rapi-gps_terraform' #'ue4-nonprod-rapi-gps_cu' #'ue4-nonprod-rapi-gps_cu' #'ue4-nonprod-rapi-gps_cu' #'ue4-nonprod-rapi-gps_terraform' #'ue4-nonprod-rapi-gps_replica'  #Añadir topico relacionado a Activador de Cloud Build a desplegar
+  #_TOPIC: 'ue4-nonprod-rapi-gps_bigtable'
+  #_TOPIC: 'ue4-nonprod-rapi-gps_replica'
+  #_TOPIC: 'ue4-nonprod-rapi-gps_terraform'
+  _COMPOSER_BUCKET: us-east4-ue4-dt-com-gco-tra-ceaa4862-bucket
+  #_PATH_BIN_COM_SQL: dags/sql
+  _PATH_BIN_COM: dags/rapi
+  #_FUNCION_COMPOSER_SQL: bin/sql-scripts/raw_to_stg/
+  _FUNCION_COMPOSER: bin/dags/
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+tags: ['cloud-builders-community'] 
